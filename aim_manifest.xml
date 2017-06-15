@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Tree of Asus ZenFone 2 ZE550ML (Z008) and ZE551ML (Z00A) -->
+  <project name="krasCGQ/android_device_asus_mofd-common" path="device/asus/mofd-common" remote="github" revision="AIM" />
+  <project name="krasCGQ/android_device_asus_Z008" path="device/asus/Z008" remote="github" revision="AIM" />
+  <project name="krasCGQ/android_device_asus_Z00A" path="device/asus/Z00A" remote="github" revision="AIM" />
+  <project name="LineageOS/android_kernel_asus_moorefield" path="kernel/asus/moorefield" remote="github" revision="cm-14.1" />
+
+  <!-- Fetch vendor stuffs from TheMuppets -->
+  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
+
+  <!-- Dependencies for building for Asus ZenFone 2 ZE550ML (Z008) and ZE551ML (Z00A) -->
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
+</manifest>
