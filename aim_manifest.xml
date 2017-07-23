@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Local manifest tree for building AIM ROM -->
 <manifest>
   <!-- Tree of Asus ZenFone 2 ZE550ML (Z008) and ZE551ML (Z00A) -->
   <project name="krasCGQ/android_device_asus_mofd-common" path="device/asus/mofd-common" remote="github" revision="AIM" />
