@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Local manifest tree for building LineageOS -->
 <manifest>
-  <!-- Tree of Asus ZenFone 2 ZE550ML (Z008) and ZE551ML (Z00A) -->
-  <project name="LineageOS/android_device_asus_mofd-common" path="device/asus/mofd-common" remote="github" revision="cm-14.1" />
-  <project name="LineageOS/android_device_asus_Z008" path="device/asus/Z008" remote="github" revision="cm-14.1" />
-  <project name="LineageOS/android_device_asus_Z00A" path="device/asus/Z00A" remote="github" revision="cm-14.1" />
-  <project name="LineageOS/android_kernel_asus_moorefield" path="kernel/asus/moorefield" remote="github" revision="cm-14.1" />
+  <!-- Tree of Asus ZenFone 2 ZE551ML (Z00A) -->
+  <project name="KudProject/android_device_asus_mofd-common" path="device/asus/mofd-common" remote="github" revision="cm-14.1" />
+  <project name="KudProject/android_device_asus_Z00A" path="device/asus/Z00A" remote="github" revision="cm-14.1" />
+  <project name="KudProject/Hololite" path="kernel/asus/moorefield" remote="github" revision="v4" />
 
   <!-- Tree of Xiaomi Redmi 3 (ido) -->
   <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="cm-base" />
@@ -15,15 +14,11 @@
   <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
   <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" />
 
-  <!-- Dependencies
-       Required by:
-       * Asus ZenFone 2 ZE550ML (Z008)
-       * Asus ZenFone 2 ZE551ML (Z00A)
-       * Xiaomi Redmi 3 (ido) -->
+  <!-- Dependencies required by Asus ZenFone 2 ZE551ML (Z00A) and Xiaomi Redmi 3 (ido) -->
   <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
 
-  <!-- Additional dependencies for building for Asus ZenFone 2 ZE550ML (Z008) and ZE551ML (Z00A) -->
+  <!-- Additional dependencies for building for Asus ZenFone 2 ZE551ML (Z00A) -->
   <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
 
   <!-- Additional dependencies for building for Xiaomi Redmi 3 (ido) -->
