@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Local manifest tree for building AIM ROM -->
+<manifest>
+  <!-- Device tree -->
+  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="AIM" />
+</manifest>

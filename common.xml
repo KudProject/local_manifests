@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Local manifest tree for building AICP -->
+<!-- Commonized local manifest tree -->
 <manifest>
-  <!-- Required tree for Xiaomi Redmi 3 (ido) -->
-  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="aicp/n7.1" />
+  <!-- Kernel tree -->
   <project name="krasCGQ/android_kernel_xiaomi_msm8916" path="kernel/xiaomi/msm8916" remote="github" revision="n-mr2" />
+
+  <!-- Vendor tree -->
   <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" />
 
-  <!-- Dependencies for building for Xiaomi Redmi 3 (ido) -->
+  <!-- Dependencies -->
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-14.1" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
-
-  <!-- Remove CMFileManager from repository -->
-  <remove-project name="AICP/packages_apps_CMFileManager" />
 </manifest>
