@@ -2,7 +2,7 @@
 <!-- Commonized local manifest tree -->
 <manifest>
   <!-- Kernel tree -->
-  <project name="krasCGQ/android_kernel_xiaomi_msm8916" path="kernel/xiaomi/msm8916" remote="github" revision="n-mr2" />
+  <project name="KudProject/android_kernel_xiaomi_msm8916" path="kernel/xiaomi/msm8916" remote="github" revision="n-mr2" />
 
   <!-- Vendor tree -->
   <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" />
