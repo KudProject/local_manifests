@@ -2,7 +2,7 @@
 <!-- Local manifest tree for building AICP -->
 <manifest>
   <!-- Device tree -->
-  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="aicp/n7.1" />
+  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="aicp-n7.1" />
 
   <!-- Remove CMFileManager from repository -->
   <remove-project name="AICP/packages_apps_CMFileManager" />
