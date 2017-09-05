@@ -3,4 +3,8 @@
 <manifest>
   <!-- Device tree -->
   <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="AIM" />
+
+  <!-- Track AIM's CMParts from KudProject -->
+  <remove-project name="LineageOS/android_packages_apps_CMParts" />
+  <project name="KudProject/android_packages_apps_CMParts" path="packages/apps/CMParts" remote="github" revision="N" />
 </manifest>
