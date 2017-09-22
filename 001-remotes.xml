@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Add GitLab SSH into remote -->
+<!-- Local remotes -->
 <manifest>
+  <remote name="kud" fetch="git://github.com/KudProject/" />
   <remote name="glabpriv" fetch="ssh://git@gitlab.com/" />
 </manifest>
