@@ -2,18 +2,25 @@
 <!-- Commonized local manifest tree -->
 <manifest>
   <!-- Kernel tree -->
-  <!-- <project path="kernel/asus/moorefield" name="Hololite" remote="kud" revision="v4" /> -->
+  <!-- <project path="kernel/asus/moorefield" name="Hololite" remote="kud" revision="v4" />
+  <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" remote="github" revision="cm-14.1" /> -->
   <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="kud" revision="n-mr2" />
   <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
   <!-- Vendor tree -->
-  <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" /> -->
+  <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" />
+  <project path="vendor/samsung" name="exynos5410/proprietary_vendor_samsung" remote="github" revision="cm-14.1" clone-depth="1" /> -->
   <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Dependencies -->
   <project path="device/qcom/common" name="android_device_qcom_common" remote="kud" revision="cm-14.1" />
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1" />
   <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
-  <!-- <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" remote="github" revision="cm-14.1" /> -->
+  <!-- <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
+  <project path="hardware/samsung_slsi-cm/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-14.1" />
+  <project path="hardware/samsung_slsi-cm/exynos5410" name="exynos5410/android_hardware_samsung_slsi-cm_exynos5410" remote="github" revision="cm-14.1" />
+  <project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github" revision="cm-14.1" />
+  <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" remote="github" revision="cm-14.1" />
+  <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1" /> -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 </manifest>
