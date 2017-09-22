@@ -2,7 +2,7 @@
 <!-- Local manifest tree for building AICP -->
 <manifest>
   <!-- Device tree -->
-  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="aicp-n7.1" />
+  <project name="KudProject/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="aicp-n7.1" />
 
   <!-- Redmi Note 4 ~ Optimized Personal Builds -->
   <project name="KudProject/android_device_xiaomi_mido" path="device/xiaomi/mido" remote="github" revision="n7.1" />

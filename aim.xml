@@ -2,7 +2,7 @@
 <!-- Local manifest tree for building AIM ROM -->
 <manifest>
   <!-- Device tree -->
-  <project name="krasCGQ/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="AIM" />
+  <project name="KudProject/android_device_xiaomi_ido" path="device/xiaomi/ido" remote="github" revision="AIM" />
 
   <!-- Track AIM's CMParts from KudProject -->
   <remove-project name="LineageOS/android_packages_apps_CMParts" />
