@@ -2,5 +2,5 @@
 <!-- Extra shits: Track GCC from JDCTeam instead -->
 <manifest>
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <project name="AOSP-JF-MM/platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" remote="github" revision="aosp-7.1.2" />
+  <project name="AOSP-JF-MM/platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" remote="github" revision="aosp-7.1.2" clone-depth="1" />
 </manifest>
