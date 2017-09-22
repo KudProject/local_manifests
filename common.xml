@@ -2,17 +2,18 @@
 <!-- Commonized local manifest tree -->
 <manifest>
   <!-- Kernel tree -->
-  <!-- <project name="Hololite" path="kernel/asus/moorefield" remote="kud" revision="v4" /> -->
-  <project name="android_kernel_xiaomi_msm8916" path="kernel/xiaomi/msm8916" remote="kud" revision="n-mr2" />
+  <!-- <project path="kernel/asus/moorefield" name="Hololite" remote="kud" revision="v4" /> -->
+  <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="kud" revision="n-mr2" />
+  <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
   <!-- Vendor tree -->
-  <!-- <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" clone-depth="1" /> -->
-  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
+  <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" /> -->
+  <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Dependencies -->
-  <project name="android_device_qcom_common" path="device/qcom/common" remote="kud" revision="cm-14.1" />
-  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="github" revision="cm-14.1" />
-  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-14.1" />
-  <!-- <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" /> -->
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="kud" revision="cm-14.1" />
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1" />
+  <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
+  <!-- <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" remote="github" revision="cm-14.1" /> -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 </manifest>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Extra shits: Track GCC 7.x from nathanchance -->
 <manifest>
-  <project name="nathanchance/gcc-prebuilts" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-android-7.x" groups="pdk,linux,arm" remote="github" revision="aarch64-linaro-7.x" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-android-7.x" name="nathanchance/gcc-prebuilts" groups="pdk,linux,arm" remote="github" revision="aarch64-linaro-7.x" clone-depth="1" />
 </manifest>

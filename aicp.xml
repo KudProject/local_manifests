@@ -2,12 +2,9 @@
 <!-- Local manifest tree for building AICP -->
 <manifest>
   <!-- Device tree -->
-  <project name="android_device_xiaomi_ido" path="device/xiaomi/ido" remote="kud" revision="aicp-n7.1" />
+  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="aicp-n7.1" />
+  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="kud" revision="n7.1" />
 
-  <!-- Redmi Note 4 ~ Optimized Personal Builds -->
-  <project name="android_device_xiaomi_mido" path="device/xiaomi/mido" remote="kud" revision="n7.1" />
-  <project name="android_kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="kud" revision="n-mr2" />
-
-  <!-- Remove CMFileManager from repository -->
+  <!-- Remove CMFileManager from working tree -->
   <remove-project name="AICP/packages_apps_CMFileManager" />
 </manifest>

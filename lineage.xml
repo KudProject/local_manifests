@@ -2,7 +2,7 @@
 <!-- Local manifest tree for building LineageOS -->
 <manifest>
   <!-- Device tree -->
-  <!-- <project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="kud" revision="cm-14.1" />
-  <project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="kud" revision="cm-14.1" /> -->
-  <project name="android_device_xiaomi_ido" path="device/xiaomi/ido" remote="kud" revision="cm-base" />
+  <!-- <project path="device/asus/mofd-common" name="android_device_asus_mofd-common" remote="kud" revision="cm-14.1" />
+  <project path="device/asus/Z00A" name="android_device_asus_Z00A" remote="kud" revision="cm-14.1" /> -->
+  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="cm-base" />
 </manifest>

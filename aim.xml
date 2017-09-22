@@ -2,12 +2,12 @@
 <!-- Local manifest tree for building AIM ROM -->
 <manifest>
   <!-- Device tree -->
-  <project name="android_device_xiaomi_ido" path="device/xiaomi/ido" remote="kud" revision="AIM" />
+  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="AIM" />
 
   <!-- Track AIM's CMParts from KudProject -->
   <remove-project name="LineageOS/android_packages_apps_CMParts" />
-  <project name="android_packages_apps_CMParts" path="packages/apps/CMParts" remote="kud" revision="N" />
+  <project path="packages/apps/CMParts" name="android_packages_apps_CMParts" remote="kud" revision="N" />
 
   <!-- SDClang from PA -->
-  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" path="vendor/qcom/sdclang-3.8/linux-x86" remote="github" revision="nougat-mr2" clone-depth="1" />
+  <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr2" clone-depth="1" />
 </manifest>
