@@ -2,16 +2,7 @@
 <!-- Local manifest tree for building LineageOS -->
 <manifest>
   <!-- Device tree -->
-  <project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="kud" revision="cm-14.1" />
-  <project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="kud" revision="cm-14.1" />
+  <!-- <project name="android_device_asus_mofd-common" path="device/asus/mofd-common" remote="kud" revision="cm-14.1" />
+  <project name="android_device_asus_Z00A" path="device/asus/Z00A" remote="kud" revision="cm-14.1" /> -->
   <project name="android_device_xiaomi_ido" path="device/xiaomi/ido" remote="kud" revision="cm-base" />
-
-  <!-- Kernel tree for ZenFone 2 -->
-  <project name="Hololite" path="kernel/asus/moorefield" remote="kud" revision="v4" />
-
-  <!-- Asus vendor tree -->
-  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" clone-depth="1" />
-
-  <!-- Additional dependencies for ZenFone 2 -->
-  <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
 </manifest>
