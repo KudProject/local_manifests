@@ -7,4 +7,7 @@
   <!-- Track AIM's CMParts from KudProject -->
   <remove-project name="LineageOS/android_packages_apps_CMParts" />
   <project name="KudProject/android_packages_apps_CMParts" path="packages/apps/CMParts" remote="github" revision="N" />
+
+  <!-- SDClang from PA -->
+  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" path="vendor/qcom/sdclang-3.8/linux-x86" remote="github" revision="nougat-mr2" clone-depth="1" />
 </manifest>
