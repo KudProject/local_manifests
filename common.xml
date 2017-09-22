@@ -5,7 +5,7 @@
   <project name="KudProject/android_kernel_xiaomi_msm8916" path="kernel/xiaomi/msm8916" remote="github" revision="n-mr2" />
 
   <!-- Vendor tree -->
-  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Dependencies -->
   <project name="KudProject/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />

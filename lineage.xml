@@ -10,7 +10,7 @@
   <project name="KudProject/Hololite" path="kernel/asus/moorefield" remote="github" revision="v4" />
 
   <!-- Asus vendor tree -->
-  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Additional dependencies for ZenFone 2 -->
   <project name="LineageOS/android_packages_apps_FlipFlap" path="packages/apps/FlipFlap" remote="github" revision="cm-14.1" />
