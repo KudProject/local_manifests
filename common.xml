@@ -18,6 +18,7 @@
   <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
   <!-- <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
   <project path="hardware/samsung_slsi-cm/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" remote="github" revision="cm-14.1" />
+  <project path="hardware/samsung_slsi-cm/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" remote="github" revision="cm-14.1" />
   <project path="hardware/samsung_slsi-cm/exynos5410" name="exynos5410/android_hardware_samsung_slsi-cm_exynos5410" remote="github" revision="cm-14.1" />
   <project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" remote="github" revision="cm-14.1" />
   <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" remote="github" revision="cm-14.1" />
