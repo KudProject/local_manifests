@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Extra shits: Snapdragon LLVM -->
+<!-- ADDITIONS: Snapdragon LLVM Compiler from ParanoidAndroid-->
 <manifest>
   <project path="prebuilts/clang/linux-x86/host/sdclang-3.8" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr2" clone-depth="1" />
 </manifest>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Extra shits: Remove certain repositories to save space -->
+<!-- DELETIONS: LineageOS infrastructures -->
 <manifest>
-  <!-- LineageOS infrastructures -->
   <remove-project name="LineageOS/ansible" />
   <remove-project name="LineageOS/cm_crowdin" />
   <remove-project name="LineageOS/cve_tracker" />

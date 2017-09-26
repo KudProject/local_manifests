@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Commonized local manifest tree -->
+<!-- Commonized local manifest file -->
 <manifest>
-  <!-- Kernel tree -->
+  <!-- Local remotes -->
+  <remote name="kud" fetch="git://github.com/KudProject/" />
+  <remote name="personal" fetch="ssh://git@gitlab.com/" />
+
+  <!-- ADDITIONS -->
+  <!-- Device trees are at ROM side -->
+
+  <!-- Kernel trees -->
   <!-- <project path="kernel/asus/moorefield" name="Hololite" remote="kud" revision="v4" />
   <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" remote="github" revision="cm-14.1" /> -->
   <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="kud" revision="n-mr2" />
   <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
-  <!-- Vendor tree -->
+  <!-- Vendor trees -->
   <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" />
   <project path="vendor/samsung" name="exynos5410/proprietary_vendor_samsung" remote="github" revision="cm-14.1" clone-depth="1" /> -->
   <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
@@ -24,4 +31,32 @@
   <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" remote="github" revision="cm-14.1" />
   <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1" /> -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
+
+  <!-- ARM64 Linaro GCC 7.x from nathanchance -->
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-android-7.x" name="nathanchance/gcc-prebuilts" groups="pdk,linux,arm" remote="github" revision="aarch64-linaro-7.x" clone-depth="1" />
+
+  <!-- DELETIONS -->
+  <!-- Generic device trees -->
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/sample" />
+
+  <!-- Non-device Google trees -->
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/contexthub" />
+
+  <!-- Darwin compilers from Google -->
+  <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
+  <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+  <remove-project name="platform/prebuilts/go/darwin-x86" />
+  <remove-project name="platform/prebuilts/ninja/darwin-x86" />
+  <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 </manifest>

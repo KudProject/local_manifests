@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Local remotes -->
-<manifest>
-  <remote name="kud" fetch="git://github.com/KudProject/" />
-  <remote name="glabpriv" fetch="ssh://git@gitlab.com/" />
-</manifest>
