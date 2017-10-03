@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ground Zero Open Source Project (GZOSP) local manifest file -->
+<manifest>
+  <!-- Device tree -->
+  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="gzosp-o" />
+  <!--<project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="kud" revision="gzosp-o" />-->
+</manifest>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Commonized local manifest file (AOSP-O) -->
+<manifest>
+  <!-- Local remotes -->
+  <remote name="personal" fetch="ssh://git@gitlab.com/" />
+
+  <!-- ADDITIONS -->
+  <!-- Device trees are at ROM side -->
+
+  <!-- Kernel trees -->
+  <project path="kernel/xiaomi/msm8916" name="ido-dev/android_kernel_xiaomi_msm8916" remote="github" revision="lineage-15.0" />
+  <project path="kernel/xiaomi/msm8953" name="thp1997/android_kernel_xiaomi_msm8953" remote="github" revision="lineage-15.0" />
+
+  <!-- Vendor trees -->
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="lineage-15.0" clone-depth="1" />
+
+  <!-- Dependencies -->
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.0" />
+
+  <!-- ARM64 Linaro GCC 7.x from nathanchance
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-android-7.x" name="nathanchance/gcc-prebuilts" groups="pdk,linux,arm" remote="github" revision="aarch64-linaro-7.x" clone-depth="1" />-->
+</manifest>
