@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Commonized local manifest file -->
+<manifest>
+  <!-- Kernel tree -->
+  <project path="kernel/xiaomi/msm8916" name="kernel_xiaomi_msm8916" remote="kud" revision="BelfastCore-3.10" />
+  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
+</manifest>

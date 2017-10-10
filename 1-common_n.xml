@@ -9,10 +9,8 @@
   <!-- Device trees are at ROM side -->
 
   <!-- Kernel trees -->
-  <!-- <project path="kernel/asus/moorefield" name="Hololite" remote="kud" revision="v4" />
+  <!-- <project path="kernel/asus/moorefield" name="LineageOS/android_kernel_asus_moorefield" remote="github" revision="cm-14.1" />
   <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" remote="github" revision="cm-14.1" /> -->
-  <project path="kernel/xiaomi/msm8916" name="android_kernel_xiaomi_msm8916" remote="kud" revision="n-mr2" />
-  <project path="kernel/xiaomi/msm8953" name="android_kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
   <!-- Vendor trees -->
   <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" />
@@ -20,7 +18,7 @@
   <project path="vendor/xiaomi" name="TheMuppets/proprietary_vendor_xiaomi" remote="github" revision="cm-14.1" clone-depth="1" />
 
   <!-- Dependencies -->
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="kud" revision="cm-14.1" />
+  <project path="device/qcom/common" name="device_qcom_common" remote="kud" revision="cm-14.1" />
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1" />
   <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
   <!-- <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" revision="cm-14.1" />
@@ -48,7 +46,6 @@
 
   <!-- Non-device Google trees -->
   <remove-project name="device/google/atv" />
-  <remove-project name="device/google/contexthub" />
 
   <!-- Darwin compilers from Google -->
   <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />

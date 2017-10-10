@@ -7,10 +7,6 @@
   <!-- ADDITIONS -->
   <!-- Device trees are at ROM side -->
 
-  <!-- Kernel trees -->
-  <project path="kernel/xiaomi/msm8916" name="ido-dev/android_kernel_xiaomi_msm8916" remote="github" revision="lineage-15.0" />
-  <project path="kernel/xiaomi/msm8953" name="thp1997/android_kernel_xiaomi_msm8953" remote="github" revision="lineage-15.0" />
-
   <!-- Vendor trees -->
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="lineage-15.0" clone-depth="1" />
 

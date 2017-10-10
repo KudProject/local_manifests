@@ -2,8 +2,8 @@
 <!-- AICP 12.1 local manifest file -->
 <manifest>
   <!-- Device tree -->
-  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="aicp-n7.1" />
-  <project path="device/xiaomi/mido" name="android_device_xiaomi_mido" remote="kud" revision="n7.1" />
+  <project path="device/xiaomi/ido" name="device_xiaomi_ido" remote="kud" revision="aicp-n7.1" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" revision="aicp-n7.1" />
 
   <!-- Remove CMFileManager from working tree -->
   <remove-project name="AICP/packages_apps_CMFileManager" />

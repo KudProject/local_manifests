@@ -2,6 +2,6 @@
 <!-- AIM ROM (AOSP-O) local manifest file -->
 <manifest>
   <!-- Device tree -->
-  <project path="device/xiaomi/ido" name="android_device_xiaomi_ido" remote="kud" revision="AIM-O" />
-  <project path="device/xiaomi/mido" name="AIM_device_xiaomi_mido" remote="kud" revision="AIM-O" />
+  <project path="device/xiaomi/ido" name="device_xiaomi_ido" remote="kud" revision="aim-o" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" revision="aim-o" />
 </manifest>
