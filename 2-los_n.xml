@@ -4,7 +4,7 @@
   <!-- Device tree -->
   <!-- <project path="device/asus/mofd-common" name="LineageOS/android_device_asus_mofd-common" remote="github" revision="cm-14.1" />
   <project path="device/asus/Z00A" name="LineageOS/android_device_asus_Z00A" remote="github" revision="cm-14.1" /> -->
-  <project path="device/xiaomi/ido" name="device_xiaomi_ido" remote="kud" revision="cm-base" />
+  <project path="device/xiaomi/ido" name="device_xiaomi_ido" remote="kud" revision="cm-14.1" />
 
   <!-- Remove LineageOS Updater from working tree -->
   <remove-project name="LineageOS/android_packages_apps_Updater" />
