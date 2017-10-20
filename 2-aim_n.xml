@@ -4,9 +4,9 @@
   <!-- Device tree -->
   <project path="device/xiaomi/ido" name="device_xiaomi_ido" remote="kud" revision="aim-N" />
 
-  <!-- Track AIM stuffs from KudProject (satan intensifies) -->
+  <!-- Track AIM stuffs from KudProject (satan intensifies)
   <remove-project name="android_device_qcom_sepolicy" />
-  <project path="device/qcom/sepolicy" name="aim_device_qcom_sepolicy" remote="kud" revision="N" />
+  <project path="device/qcom/sepolicy" name="aim_device_qcom_sepolicy" remote="kud" revision="N" /> -->
   <remove-project name="LineageOS/android_packages_apps_CMParts" />
   <project path="packages/apps/CMParts" name="aim_packages_apps_CMParts" remote="kud" revision="N" />
 
