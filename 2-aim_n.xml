@@ -11,5 +11,5 @@
   <project path="packages/apps/CMParts" name="aim_packages_apps_CMParts" remote="kud" revision="N" />
 
   <!-- SDClang from PA -->
-  <project path="vendor/qcom/sdclang-4.0/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-4.0_linux-x86" remote="github" revision="oreo" clone-depth="1" />
+  <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr2" clone-depth="1" />
 </manifest>
