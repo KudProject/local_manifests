@@ -30,9 +30,6 @@
   <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" remote="github" revision="cm-14.1" /> -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="cm-14.1" />
 
-  <!-- ARM64 Linaro GCC 7.x from nathanchance -->
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-linux-android-7.x" name="nathanchance/gcc-prebuilts" groups="pdk,linux,arm" remote="github" revision="aarch64-linaro-7.x" clone-depth="1" />
-
   <!-- DELETIONS -->
   <!-- Generic device trees -->
   <remove-project name="device/generic/arm64" />
@@ -46,6 +43,7 @@
 
   <!-- Non-device Google trees -->
   <remove-project name="device/google/atv" />
+  <remove-project name="device/google/contexthub" />
 
   <!-- Darwin compilers from Google -->
   <remove-project name="platform/prebuilts/clang/darwin-x86/host/3.6" />
