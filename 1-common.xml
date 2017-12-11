@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Commonized local manifest file -->
 <manifest>
-  <!-- Kernel tree -->
+  <!-- ido kernel -->
   <project path="kernel/xiaomi/msm8916" name="kernel_xiaomi_msm8916" remote="kud" revision="BelfastCore-3.10" />
-  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
   <!-- ARM64 Linaro GCC 7.x from KudProject
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-cortex_a53-linux-android-7.x" name="KudProject/aarch64-linux-android" groups="pdk,linux,arm" remote="github" revision="a53-7.x" clone-depth="1" /> -->

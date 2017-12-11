@@ -7,8 +7,11 @@
   <!-- ADDITIONS -->
   <!-- Device trees are at ROM side -->
 
+  <!-- mido kernel -->
+  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" revision="oreo" />
+
   <!-- Vendor trees -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="lineage-15.0" clone-depth="1" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="private" revision="oreo" clone-depth="1" />
 
   <!-- Dependencies -->
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.0" />

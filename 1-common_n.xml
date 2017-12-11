@@ -11,6 +11,7 @@
   <!-- Kernel trees -->
   <!-- <project path="kernel/asus/moorefield" name="LineageOS/android_kernel_asus_moorefield" remote="github" revision="cm-14.1" />
   <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" remote="github" revision="cm-14.1" /> -->
+  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" revision="BelfastCore-3.18" />
 
   <!-- Vendor trees -->
   <!-- <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="github" revision="cm-14.1" clone-depth="1" />
