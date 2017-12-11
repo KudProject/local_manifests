@@ -2,7 +2,9 @@
 <!-- Commonized local manifest file (AOSP-O) -->
 <manifest>
   <!-- Local remotes -->
-  <remote name="personal" fetch="ssh://git@gitlab.com/" />
+  <remote name="personal"
+          fetch="ssh://git@gitlab.com/krasCGQ"
+          revision="oreo" />
 
   <!-- ADDITIONS -->
   <!-- Device trees are at ROM side -->
@@ -11,7 +13,7 @@
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" revision="oreo" />
 
   <!-- Vendor trees -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="personal" revision="oreo" clone-depth="1" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="personal" clone-depth="1" />
 
   <!-- Dependencies -->
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="lineage-15.0" />
