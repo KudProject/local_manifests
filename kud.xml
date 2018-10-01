@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="kud"
+          fetch="git://github.com/KudProject"
+          pushurl="ssh://git@github.com/KudProject"
+          revision="pie" />
+
+  <remote name="caf"
+          fetch="git://codeaurora.org"
+          revision="refs/tags/LA.UM.7.2.r1-04900-sdm660.0" />
+
+  <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />-->
+  <remove-project name="LineageOS/android_external_tinycompress" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <!--<remove-project name="TeamHorizon/android_hardware_qcom_audio" />
+  <remove-project name="TeamHorizon/android_hardware_qcom_display" />
+  <remove-project name="TeamHorizon/android_system_sepolicy" />
+  <remove-project name="TeamHorizon/frameworks_base" />-->
+  <remove-project name="TeamHorizon/vendor_xenonhd" />
+  <!--<remove-project name="platform/prebuilts/clang/host/linux-x86" />-->
+
+  <project path="device/asus/X00T" name="device_asus_X00T" remote="kud" revision="lineage-16.0" />
+  <!--<project path="device/kud/sepolicy" name="device_kud_sepolicy" remote="kud" />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="kud" revision="o" />-->
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" revision="lineage-16.0" />
+  <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" />
+  <!-- Switch to fork of external/tinycompress with few extra patches to make build possible on CAF devices -->
+  <project path="external/tinycompress" name="external_tinycompress" remote="kud" />
+  <!--<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="o" />-->
+  <project path="hardware/qcom/audio/default" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-16.0-caf-8996" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" />
+  <!-- Switch to fork of hardware/qcom/bt-caf to avoid building libbt-hidlclient -->
+  <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" />
+  <project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-16.0-caf-8996" />
+  <project path="hardware/qcom/display-caf/msm8998" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" />
+  <project path="hardware/qcom/media-caf/msm8996" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-16.0-caf-8996" />
+  <project path="hardware/qcom/media-caf/msm8998" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-16.0-caf-8998" />
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0" />
+  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
+  <!--<project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="a7d1c71a3f10a2c07a375ec4294897cc957aca4c" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
+  <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" />
+  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
+
+  <remove-project name="LineageOS/android_packages_apps_AppDrawer" />
+  <!--<remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />-->
+  <remove-project name="LineageOS/android_packages_apps_TV" />
+  <remove-project name="LineageOS/android_packages_apps_TvSettings" />
+  <!--<remove-project name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
+  <remove-project name="LineageOS/android_packages_apps_YahooWeatherProvider" />
+  <remove-project name="LineageOS/android_system_extras_su" />-->
+  <remove-project name="TeamHorizon/android_packages_apps_XenonOTA" />
+  <remove-project name="TeamHorizon/platform_manifest" />
+  <remove-project name="platform/developers/build" />
+  <remove-project name="platform/hardware/intel/audio_media" />
+  <remove-project name="platform/hardware/intel/bootstub" />
+  <remove-project name="platform/hardware/intel/common/bd_prov" />
+  <remove-project name="platform/hardware/intel/common/libmix" />
+  <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+  <remove-project name="platform/hardware/intel/common/libva" />
+  <remove-project name="platform/hardware/intel/common/libwsbm" />
+  <remove-project name="platform/hardware/intel/common/omx-components" />
+  <remove-project name="platform/hardware/intel/common/utils" />
+  <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+  <remove-project name="platform/hardware/intel/img/hwcomposer" />
+  <remove-project name="platform/hardware/intel/img/psb_headers" />
+  <remove-project name="platform/hardware/intel/img/psb_video" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/hardware/marvell/bt" />
+  <remove-project name="platform/packages/apps/Car/Dialer" />
+  <remove-project name="platform/packages/apps/Car/Hvac" />
+  <remove-project name="platform/packages/apps/Car/LatinIME" />
+  <remove-project name="platform/packages/apps/Car/LensPicker" />
+  <remove-project name="platform/packages/apps/Car/LocalMediaPlayer" />
+  <remove-project name="platform/packages/apps/Car/Media" />
+  <remove-project name="platform/packages/apps/Car/Messenger" />
+  <remove-project name="platform/packages/apps/Car/Overview" />
+  <remove-project name="platform/packages/apps/Car/Radio" />
+  <remove-project name="platform/packages/apps/Car/Settings" />
+  <remove-project name="platform/packages/apps/Car/Stream" />
+  <remove-project name="platform/packages/apps/Car/SystemUpdater" />
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+</manifest>
