@@ -62,7 +62,6 @@
   <!--<remove-project name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
   <remove-project name="LineageOS/android_packages_apps_YahooWeatherProvider" />
   <remove-project name="LineageOS/android_system_extras_su" />-->
-  <remove-project name="TeamHorizon/android_packages_apps_XenonOTA" />
   <remove-project name="TeamHorizon/platform_manifest" />
   <remove-project name="platform/developers/build" />
   <remove-project name="platform/hardware/intel/audio_media" />
