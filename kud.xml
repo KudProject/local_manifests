@@ -21,7 +21,7 @@
   <!--<remove-project name="TeamHorizon/android_system_sepolicy" />
   <remove-project name="TeamHorizon/frameworks_base" />-->
   <remove-project name="TeamHorizon/vendor_xenonhd" />
-  <!--<remove-project name="platform/prebuilts/clang/host/linux-x86" />-->
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
   <project path="device/asus/X00T" name="device_asus_X00T" remote="kud" revision="lineage-16.0" />
   <!--<project path="device/kud/sepolicy" name="device_kud_sepolicy" remote="kud" />
@@ -47,8 +47,8 @@
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
-  <!--<project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="a7d1c71a3f10a2c07a375ec4294897cc957aca4c" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
+  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" />
+  <!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
