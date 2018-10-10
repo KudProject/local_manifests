@@ -7,7 +7,7 @@
 
   <remote name="caf"
           fetch="git://codeaurora.org"
-          revision="refs/tags/LA.UM.7.2.r1-04900-sdm660.0" />
+          revision="refs/tags/LA.UM.7.2.r1-05100-sdm660.0" />
 
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />-->
   <remove-project name="LineageOS/android_external_tinycompress" />
