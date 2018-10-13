@@ -10,7 +10,6 @@
           revision="refs/tags/LA.UM.7.2.r1-05100-sdm660.0" />
 
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />-->
-  <remove-project name="LineageOS/android_external_tinycompress" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
@@ -28,8 +27,6 @@
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="kud" revision="o" />-->
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
-  <!-- Switch to fork of external/tinycompress with few extra patches to make build possible on CAF devices -->
-  <project path="external/tinycompress" name="external_tinycompress" remote="kud" />
   <!--<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="o" />-->
   <project path="hardware/qcom/audio/default" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8996" />
