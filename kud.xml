@@ -48,7 +48,7 @@
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0-rebase" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
   <!-- TEMP -->
-  <project path="packages/apps/SnapdragonGallery" name"platform/packages/apps/SnapdragonGallery" remote="caf" revision="refs/tags/LA.UM.7.4.r1-03900-8x98.0" />
+  <project path="packages/apps/SnapdragonGallery" name="platform/packages/apps/SnapdragonGallery" remote="caf" revision="refs/tags/LA.UM.7.4.r1-03900-8x98.0" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
   <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" />
   <!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
