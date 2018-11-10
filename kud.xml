@@ -6,8 +6,7 @@
           revision="pie" />
 
   <remote name="caf"
-          fetch="git://codeaurora.org"
-          revision="refs/tags/LA.UM.7.3.r1-05900-sdm845.0" />
+          fetch="git://codeaurora.org" />
 
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />-->
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
@@ -16,6 +15,8 @@
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <remove-project name="LineageOS/android_hardware_ril" />
+  <!-- TEMP -->
+  <remove-project name="LineageOS/android_packages_apps_Gallery2" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <!--<remove-project name="TeamHorizon/android_system_sepolicy" />
@@ -46,11 +47,13 @@
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0-rebase" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
+  <!-- TEMP -->
+  <project path="packages/apps/SnapdragonGallery" name"platform/apps/SnapdragonGallery" remote="caf" revision="refs/tags/LA.UM.7.4.r1-03900-8x98.0" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
   <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" />
   <!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
-  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.3.r1-05900-sdm845.0" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
