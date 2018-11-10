@@ -58,6 +58,8 @@
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
 
+  <remove-project name="LineageOS/android_device_qcom_sepolicy-legacy" />
+  <remove-project name="LineageOS/android_external_connectivity" />
   <remove-project name="LineageOS/android_packages_apps_AppDrawer" />
   <!--<remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />-->
   <remove-project name="LineageOS/android_packages_apps_TV" />
