@@ -30,27 +30,21 @@
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
   <!--<project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="o" />-->
-  <project path="hardware/qcom/audio/default" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8996" />
   <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8998" />
-  <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
-  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" />
   <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="kud" revision="pie-caf-8996" />
   <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="kud" revision="pie-caf-8998" />
-  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" />
   <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" groups="qcom,pdk" remote="kud" revision="pie-caf-8996" />
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" groups="qcom,pdk" remote="kud" revision="pie-caf-8998" />
-  <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
-  <project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0-rebase" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
   <!-- TEMP -->
   <project path="packages/apps/SnapdragonGallery" name="platform/packages/apps/SnapdragonGallery" remote="caf" revision="refs/tags/LA.UM.7.4.r1-03900-8x98.0" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
-  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" />
+  <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.3.r1-05900-sdm845.0" />
