@@ -9,6 +9,7 @@
           fetch="git://codeaurora.org" />
 
   <!-- To-be-replaced -->
+  <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
@@ -18,6 +19,7 @@
   <remove-project name="LineageOS/android_packages_apps_Gallery2" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
   <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
@@ -36,6 +38,7 @@
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.3.r1-06300-sdm845.0" />
 
   <!-- Forked CodeAurora repositories from LineageOS -->
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="kud" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8996" />
   <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8998" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
@@ -46,6 +49,7 @@
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="kud" />
 
   <!-- Replacements -->
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
