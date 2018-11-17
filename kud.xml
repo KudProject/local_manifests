@@ -47,7 +47,7 @@
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <!--<project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
-  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.3.r1-05900-sdm845.0" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.3.r1-06300-sdm845.0" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
