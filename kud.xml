@@ -26,7 +26,7 @@
   <project path="device/asus/X00T" name="TeamHorizon/android_device_asus_X00T" revision="p" />
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
-  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0-rebase" />
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
