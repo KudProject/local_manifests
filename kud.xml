@@ -19,7 +19,6 @@
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
-  <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
   <!-- Device sources -->
@@ -51,7 +50,6 @@
 
   <!-- Replacements -->
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
-  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
   <!-- Currently disabled -->
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
