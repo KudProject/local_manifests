@@ -62,7 +62,7 @@
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="kud" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="kud" revision="9.0" />
-  <project path="vendor/xenonhd" name="vendor/xenonhd" remote="kud" revision="p" />
+  <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
   <!-- Currently disabled -->
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
