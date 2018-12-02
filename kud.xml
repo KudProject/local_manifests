@@ -13,15 +13,19 @@
 
   <!-- To-be-replaced -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <remove-project name="LineageOS/android_hardware_interfaces" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <remove-project name="LineageOS/android_hardware_ril" />
+  <remove-project name="LineageOS/android_system_vold" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="TeamHorizon/frameworks_base" />
+  <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
   <!-- Device sources -->
@@ -49,19 +53,22 @@
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" groups="qcom,pdk" remote="kud" revision="pie-caf-8998" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" revision="9.0" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="kud" />
 
   <!-- Replacements -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="p" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="kud" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
+  <project path="system/vold" name="system_vold" groups="pdk" remote="kud" revision="9.0" />
+  <project path="vendor/xenonhd" name="vendor/xenonhd" remote="kud" revision="p" />
 
   <!-- Currently disabled -->
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
   <remove-project name="TeamHorizon/android_system_sepolicy" />
-  <remove-project name="TeamHorizon/frameworks_base" />
   <project path="device/kud/sepolicy" name="device_kud_sepolicy" remote="kud" />
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="kud" revision="o" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="o" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
 
   <!-- Projects removal -->
