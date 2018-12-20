@@ -13,7 +13,6 @@
 
   <!-- To-be-replaced -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
-  <remove-project name="LineageOS/android_hardware_interfaces" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
@@ -59,7 +58,6 @@
 
   <!-- Replacements -->
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="p" />
-  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="kud" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="kud" revision="9.0" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
