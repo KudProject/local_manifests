@@ -3,7 +3,7 @@
   <remote name="kud"
           fetch="git://github.com/KudProject"
           pushurl="ssh://git@github.com/KudProject"
-          revision="pie" />
+          revision="lineage-16.0" />
 
   <remote name="caf"
           fetch="git://codeaurora.org" />
@@ -19,11 +19,10 @@
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <remove-project name="LineageOS/android_hardware_ril" />
-  <remove-project name="LineageOS/android_system_vold" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
-  <remove-project name="TeamHorizon/frameworks_base" />
   <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
@@ -31,36 +30,35 @@
   <project path="device/asus/X00T" name="TeamHorizon/android_device_asus_X00T" revision="p" />
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
-  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" revision="lineage-16.0" />
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" />
   <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
-  <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" />
-  <project path="vendor/xenonhd/keys" name="krasCGQ/android-certs" remote="gl-private" revision="master" />
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
+  <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" revision="pie" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="pie" />
 
   <!-- CodeAurora projects -->
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.8.r1-04300-SDM710.0" />
 
   <!-- Forked CodeAurora repositories from LineageOS -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="kud" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8996" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk" remote="kud" revision="pie-caf-8998" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk" remote="kud" revision="lineage-16.0/msm8998" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
-  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="kud" revision="pie-caf-8996" />
-  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="kud" revision="pie-caf-8998" />
-  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" groups="qcom,pdk" remote="kud" revision="pie-caf-8996" />
-  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media" groups="qcom,pdk" remote="kud" revision="pie-caf-8998" />
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display-caf" groups="pdk,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display-caf" groups="pdk,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8998" />
+  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf" groups="qcom,pdk" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media-caf" groups="qcom,pdk" remote="kud" revision="lineage-16.0/msm8998" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" revision="9.0" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="kud" />
 
   <!-- Replacements -->
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="p" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
-  <project path="system/vold" name="system_vold" groups="pdk" remote="kud" revision="9.0" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
+
+  <!-- Android signing keys -->
+  <project path="vendor/xenonhd/keys" name="krasCGQ/android-certs" remote="gl-private" revision="master" />
 
   <!-- Currently disabled -->
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
