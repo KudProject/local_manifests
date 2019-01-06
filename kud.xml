@@ -20,9 +20,9 @@
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <remove-project name="LineageOS/android_hardware_ril" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="TeamHorizon/android_vendor_qcom_opensource_cryptfs_hw" />
   <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
 
@@ -31,7 +31,7 @@
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" />
-  <project path="kernel/xiaomi/msm8953" name="kernel_xiaomi_msm8953" remote="kud" />
+  <project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" />
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" revision="pie" />
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="pie" />
 
@@ -49,7 +49,7 @@
   <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media-caf" groups="qcom,pdk" remote="kud" revision="lineage-16.0/msm8998" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" revision="p" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="kud" />
 
@@ -107,7 +107,6 @@
   <remove-project name="platform/packages/apps/Car/Stream" />
   <remove-project name="platform/packages/apps/Car/SystemUpdater" />
   <remove-project name="platform/prebuilts/android-emulator" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/qemu-kernel" />
 </manifest>
