@@ -36,22 +36,22 @@
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="pie" />
 
   <!-- CodeAurora projects -->
-  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" remote="caf" revision="refs/tags/LA.UM.7.5.2.r1-00500-8x96.0" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="refs/tags/LA.UM.7.5.2.r1-00500-8x96.0" />
 
   <!-- Forked CodeAurora repositories from LineageOS -->
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="kud" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk" remote="kud" revision="lineage-16.0/msm8996" />
-  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk" remote="kud" revision="lineage-16.0/msm8998" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/audio-caf/msm8998" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk-qcom" remote="kud" revision="lineage-16.0/msm8998" />
   <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
-  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display-caf" groups="pdk,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8996" />
-  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display-caf" groups="pdk,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8998" />
-  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf" groups="qcom,pdk" remote="kud" revision="lineage-16.0/msm8996" />
-  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media-caf" groups="qcom,pdk" remote="kud" revision="lineage-16.0/msm8998" />
-  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk" remote="kud" />
-  <project path="hardware/ril-caf" name="hardware_ril-caf" groups="pdk" remote="kud" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="kud" revision="p" />
-  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="kud" />
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="kud" />
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display-caf" groups="pdk-qcom,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/display-caf/msm8998" name="hardware_qcom_display-caf" groups="pdk-qcom,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8998" />
+  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf" groups="qcom,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/media-caf/msm8998" name="hardware_qcom_media-caf" groups="qcom,pdk-qcom" remote="kud" revision="lineage-16.0/msm8998" />
+  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
+  <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="kud" revision="p" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
 
   <!-- Replacements -->
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
@@ -71,12 +71,10 @@
   <remove-project name="LineageOS/android_device_qcom_sepolicy-legacy" />
   <remove-project name="LineageOS/android_external_connectivity" />
   <remove-project name="LineageOS/android_packages_apps_AppDrawer" />
-  <!--<remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />-->
+  <remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
   <remove-project name="LineageOS/android_packages_apps_TV" />
   <remove-project name="LineageOS/android_packages_apps_TvSettings" />
-  <!--<remove-project name="LineageOS/android_packages_apps_WundergroundWeatherProvider" />
-  <remove-project name="LineageOS/android_packages_apps_YahooWeatherProvider" />
-  <remove-project name="LineageOS/android_system_extras_su" />-->
+  <!--<remove-project name="LineageOS/android_system_extras_su" />-->
   <remove-project name="TeamHorizon/platform_manifest" />
   <remove-project name="platform/developers/build" />
   <remove-project name="platform/hardware/intel/audio_media" />
