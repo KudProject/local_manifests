@@ -7,12 +7,16 @@
   <!-- Remove AOSP default recovery -->
   <remove-project name="platform/bootable/recovery" />
 
+  <!-- To-be-replaced -->
+  <remove-project name="android_external_f2fs-tools" />
+
   <!-- TWRP projects -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-9.0" />
   <project name="android_external_busybox" path="external/busybox" remote="omnirom" revision="android-8.1" />
 
   <!-- All the remaining stuffs -->
   <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" revision="android-8.1" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie" />
   <!-- OmniROM will always try to fetch dependencies even if they exist, so leave this be -->
   <project path="kernel/asus/sdm660" name="KudProject/kernel_asus_sdm660" remote="github" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
