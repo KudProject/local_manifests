@@ -14,7 +14,7 @@
   <remove-project name="android_external_f2fs-tools" />
 
   <!-- TWRP projects -->
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-9.0" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="kud" revision="android-9.0" />
   <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
 
   <!-- All the remaining stuffs -->
