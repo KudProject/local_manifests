@@ -8,6 +8,9 @@
   <remote name="caf"
           fetch="git://codeaurora.org" />
 
+  <remote name="gh-private"
+          fetch="ssh://git@github.com" />
+
   <remote name="gl-private"
           fetch="ssh://git@gitlab.com" />
 
@@ -57,19 +60,29 @@
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
-  <!-- Android signing keys -->
+  <!-- Personal stuffs -->
+  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="gh-private" revision="pie" />
   <project path="vendor/xenonhd/keys" name="krasCGQ/android-certs" remote="gl-private" revision="master" />
 
   <!-- Currently disabled -->
   <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
   <remove-project name="TeamHorizon/android_system_sepolicy" />
-  <project path="device/kud/sepolicy" name="device_kud_sepolicy" remote="kud" />
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="kud" revision="o" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
 
   <!-- Projects removal -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy-legacy" />
   <remove-project name="LineageOS/android_external_connectivity" />
+  <remove-project name="LineageOS/android_hardware_broadcom_libbt" />
+  <remove-project name="LineageOS/android_hardware_broadcom_nfc" />
+  <remove-project name="LineageOS/android_hardware_broadcom_wlan" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_data_ipacfg-mgr" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_gps" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_media" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_thermal" />
+  <remove-project name="LineageOS/android_hardware_qcom_sdm845_vr" />
   <remove-project name="LineageOS/android_packages_apps_AppDrawer" />
   <remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
   <remove-project name="LineageOS/android_packages_apps_TV" />
@@ -77,6 +90,10 @@
   <!--<remove-project name="LineageOS/android_system_extras_su" />-->
   <remove-project name="TeamHorizon/platform_manifest" />
   <remove-project name="platform/developers/build" />
+  <remove-project name="platform/hardware/akm" />
+  <remove-project name="platform/hardware/google/av" />
+  <remove-project name="platform/hardware/google/easel" />
+  <remove-project name="platform/hardware/google/interfaces" />
   <remove-project name="platform/hardware/intel/audio_media" />
   <remove-project name="platform/hardware/intel/bootstub" />
   <remove-project name="platform/hardware/intel/common/bd_prov" />
