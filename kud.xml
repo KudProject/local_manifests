@@ -16,6 +16,7 @@
 
   <!-- To-be-replaced -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <remove-project name="LineageOS/android_external_f2fs-tools" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
@@ -57,6 +58,7 @@
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
 
   <!-- Replacements -->
+  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="pie-dev" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
