@@ -8,9 +8,6 @@
   <remote name="caf"
           fetch="git://codeaurora.org" />
 
-  <remote name="gh-private"
-          fetch="ssh://git@github.com" />
-
   <remote name="gl-private"
           fetch="ssh://git@gitlab.com" />
 
@@ -69,7 +66,7 @@
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
   <!-- Personal stuffs -->
-  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="gh-private" revision="pie" />
+  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="pie" />
   <project path="vendor/xenonhd/keys" name="krasCGQ/android-certs" remote="gl-private" revision="master" />
 
   <!-- Currently disabled -->
