@@ -29,6 +29,8 @@
   <remove-project name="platform/frameworks/compile/mclinker" />
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" />
 
   <!-- Device sources -->
   <project path="device/asus/X00T" name="TeamHorizon/android_device_asus_X00T" revision="p" />
@@ -57,12 +59,18 @@
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="kud" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
 
+  <!-- Snapdragon LLVM -->
+  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64" name="SlimCAF/proprietary_vendor_qcom_sdclang-4.0_linux-x86_64" remote="github" clone-depth="1" revision="pie" />
+  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" remote="github" clone-depth="1" revision="pie" />
+
   <!-- Replacements -->
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="pie-dev" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="master" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="e54105c9f893a376232e0fc539c0e7c01c829b1e" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="b91992b549430ac1a8a684f4bfe8c95941901165" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" revision="master" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
   <!-- Personal stuffs -->
