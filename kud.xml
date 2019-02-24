@@ -100,7 +100,7 @@
   <remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" />
   <remove-project name="LineageOS/android_packages_apps_TV" />
   <remove-project name="LineageOS/android_packages_apps_TvSettings" />
-  <!--<remove-project name="LineageOS/android_system_extras_su" />-->
+  <remove-project name="LineageOS/android_system_extras_su" />
   <remove-project name="TeamHorizon/platform_manifest" />
   <remove-project name="platform/developers/build" />
   <remove-project name="platform/hardware/akm" />
