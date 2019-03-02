@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You should probably let Roomservice deal with this unless you know what you are doing. -->
+<manifest>
+  <remote fetch="git://github.com/KudProject" name="kud" pushurl="ssh://git@github.com/KudProject" revision="lineage-16.0" />
+  <project name="AOSPA/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="aospa" revision="pie-8998" />
+  <project name="AOSPA/android_hardware_qcom_display" path="hardware/qcom/display" remote="aospa" revision="pie-8998" />
+  <project name="AOSPA/android_hardware_qcom_media" path="hardware/qcom/media" remote="aospa" revision="pie-8998" />
+  <project name="kernel_asus_sdm660" path="kernel/asus/sdm660" remote="kud" revision="aospa" />
+  <project name="krasCGQ/device_asus_X00T" path="device/asus/X00T" remote="github-ssh" revision="aospa" />
+  <project name="krasCGQ/proprietary_vendor_asus" path="vendor/asus" remote="github-ssh" revision="aospa" />
+</manifest>
