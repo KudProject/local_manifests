@@ -23,6 +23,7 @@
   <remove-project name="LineageOS/android_hardware_ril" />
   <remove-project name="LineageOS/android_prebuilts_build-tools" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
   <remove-project name="TeamHorizon/android_vendor_qcom_opensource_cryptfs_hw" />
@@ -57,6 +58,7 @@
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="kud" revision="p" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="kud" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="kud" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
 
