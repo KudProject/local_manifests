@@ -61,11 +61,11 @@
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
 
   <!-- Snapdragon LLVM -->
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64" name="SlimCAF/proprietary_vendor_qcom_sdclang-4.0_linux-x86_64" remote="github" clone-depth="1" revision="pie" />
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" remote="github" clone-depth="1" revision="pie" />
+  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64" name="SlimCAF/proprietary_vendor_qcom_sdclang-4.0_linux-x86_64" clone-depth="1" revision="pie" />
+  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" clone-depth="1" revision="pie" />
 
   <!-- Replacements -->
-  <project path="external/ant-wireless/ant_native" name="AOSiP/platform_external_ant-wireless_ant_native" remote="github" revision="pie" />
+  <project path="external/ant-wireless/ant_native" name="AOSiP/platform_external_ant-wireless_ant_native" revision="pie" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="pie-dev" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="master" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
