@@ -13,6 +13,7 @@
 
   <!-- To-be-replaced -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <remove-project name="LineageOS/android_external_e2fsprogs" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_bt" />
@@ -66,6 +67,7 @@
   <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" clone-depth="1" revision="pie" />
 
   <!-- Replacements -->
+  <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" revision="4bfc6f8b24655bc173ccdf2fb5044191a1b30aaa" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="pie-dev" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="master" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
