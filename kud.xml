@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Remotes -->
   <remote name="kud"
           fetch="git://github.com/KudProject"
           pushurl="ssh://git@github.com/KudProject" />
@@ -7,21 +8,14 @@
   <remote name="gh-private"
           fetch="ssh://git@github.com" />
 
-  <!-- Remove AOSP default recovery -->
+  <!-- Replacements -->
+  <remove-project name="android_external_f2fs-tools" />
   <remove-project name="platform/bootable/recovery" />
 
-  <!-- To-be-replaced -->
-  <remove-project name="android_external_f2fs-tools" />
-
-  <!-- TWRP projects -->
+  <!-- Custom additions -->
   <project path="bootable/recovery" name="bootable_recovery" remote="kud" revision="android-9.0" />
-  <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-8.1" />
-
-  <!-- All the remaining stuffs -->
-  <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" revision="android-8.1" />
-  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie" />
-  <!-- OmniROM will always try to fetch dependencies even if they exist, so leave this be -->
-  <project path="kernel/asus/sdm660" name="KudProject/kernel_asus_sdm660" remote="github" revision="lineage-16.0" />
+  <project path="device/asus/X00T" name="krasCGQ/device_asus_X00T-twrp" remote="gh-private" revision="android-9.0" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie-dev" />
   <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="gh-private" revision="pie" />
-  <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" remote="github" revision="lineage-15.1" />
+  <project path="vendor/qcom/opensource/commonsys" name="android_vendor_qcom_opensource_commonsys" remote="omnirom" revision="android-9.0" />
 </manifest>
