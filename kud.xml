@@ -69,7 +69,7 @@
   <!-- Replacements -->
   <project path="external/e2fsprogs" name="LineageOS/android_external_e2fsprogs" revision="4bfc6f8b24655bc173ccdf2fb5044191a1b30aaa" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="pie-dev" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="master" />
+  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-q-preview-2.5" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="e54105c9f893a376232e0fc539c0e7c01c829b1e" />
