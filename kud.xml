@@ -20,11 +20,13 @@
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <remove-project name="LineageOS/android_hardware_ril" />
+  <remove-project name="LineageOS/android_packages_services_Telephony" />
   <remove-project name="LineageOS/android_prebuilts_build-tools" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
+  <remove-project name="TeamHorizon/android_packages_apps_XenonSettings" />
   <remove-project name="TeamHorizon/android_vendor_qcom_opensource_cryptfs_hw" />
   <remove-project name="TeamHorizon/vendor_xenonhd" />
   <remove-project name="platform/frameworks/compile/mclinker" />
@@ -68,6 +70,8 @@
   <!-- Replacements -->
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-q-preview-2.5" />
+  <project path="packages/apps/XenonSettings" name="packages_apps_XenonSettings" remote="kud" revision="p" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="kud" revision="p" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
   <project path="prebuilts/clang/host/linux-x86" name="AOSiP/platform_prebuilts_clang_host_linux-x86" groups="pdk" clone-depth="1" revision="pie" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="e54105c9f893a376232e0fc539c0e7c01c829b1e" />
