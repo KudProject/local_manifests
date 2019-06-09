@@ -63,10 +63,6 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.x" name="RaphielGang/aarch64-linux-gnu-8.x" clone-depth="1" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-8.x" name="RaphielGang/arm-linux-gnueabi-8.x" clone-depth="1" revision="master" />
 
-  <!-- Snapdragon LLVM -->
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64" name="SlimCAF/proprietary_vendor_qcom_sdclang-4.0_linux-x86_64" clone-depth="1" revision="pie" />
-  <project path="prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_6.0/prebuilt/linux-x86_64" name="tomgus1/proprietary_vendor_qcom_sdclang-6.0_linux-x86_64" clone-depth="1" revision="pie" />
-
   <!-- Replacements -->
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-q-preview-2.5" />
@@ -78,15 +74,8 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" revision="master" />
   <project path="vendor/xenonhd" name="vendor_xenonhd" remote="kud" revision="p" />
 
-  <!-- Personal stuffs -->
-  <!--<project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="pie" />-->
+  <!-- Signing keys -->
   <project path="vendor/xenonhd/keys" name="krasCGQ/android-certs" remote="gitlab" revision="master" />
-
-  <!-- Currently disabled -->
-  <!--<remove-project name="LineageOS/android_device_lineage_sepolicy" />
-  <remove-project name="TeamHorizon/android_system_sepolicy" />
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="kud" revision="o" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="kud" revision="o" />-->
 
   <!-- Projects removal -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy-legacy" />
