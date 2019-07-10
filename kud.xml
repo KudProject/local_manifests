@@ -16,6 +16,7 @@
   <project path="bootable/recovery" name="bootable_recovery" remote="kud" revision="android-9.0" />
   <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" revision="android-9.0" />
   <project path="device/xiaomi/grus" name="device_xiaomi_grus-twrp" remote="kud" revision="android-9.0" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" revision="android-9.0" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie-dev" />
   <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="gh-private" revision="pie" />
   <project path="vendor/qcom/opensource/commonsys" name="android_vendor_qcom_opensource_commonsys" remote="omnirom" revision="android-9.0" />
