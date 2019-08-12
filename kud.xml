@@ -5,9 +5,6 @@
           pushurl="ssh://git@github.com/KudProject"
           revision="lineage-16.0" />
 
-  <remote name="caf"
-          fetch="git://codeaurora.org" />
-
   <!-- To-be-replaced -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
@@ -49,7 +46,7 @@
   <project path="hardware/qcom/audio-caf/msm8916" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/media-caf/msm8916" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8916" />
-  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="av-aosp-qc.lnx.5.0" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="kud" revision="pie" />
 
   <!-- Forked CodeAurora repositories from LineageOS -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
