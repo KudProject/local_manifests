@@ -31,16 +31,20 @@
   <!-- Device sources -->
   <project path="device/asus/X00T" name="TeamHorizon/android_device_asus_X00T" revision="p" />
   <project path="device/cyanogen/msm8916-common" name="LineageOS/android_device_cyanogen_msm8916-common" />
+  <project path="device/xiaomi/grus" name="device_xiaomi_grus" remote="kud" revision="p" />
   <project path="device/xiaomi/ido" name="krasCGQ/android_device_xiaomi_ido" revision="p" />
   <project path="device/xiaomi/mido" name="TeamHorizon/android_device_xiaomi_mido" revision="p" />
   <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" revision="p" />
+  <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" remote="kud" revision="p" />
   <!--<project path="kernel/asus/sdm660" name="kernel_asus_sdm660" remote="kud" />-->
   <project path="kernel/xiaomi/msm8916" name="xiaomi-classic-dev/android_kernel_xiaomi_msm8916" clone-depth="1" revision="mkp" />
-  <!--<project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" />-->
+  <!--<project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" />
+  <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="pie" />-->
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="kud" revision="pie" />
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" revision="pie" />
   <project path="vendor/xiaomi/ido" name="xiaomi-classic-dev/android_vendor_xiaomi_ido" clone-depth="1" revision="mkp" />
   <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" />
+  <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" remote="kud" revision="p" />
 
   <!-- CodeAurora projects -->
   <project path="hardware/qcom/audio-caf/msm8916" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8916" />
