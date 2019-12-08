@@ -15,6 +15,8 @@
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
+  <remove-project name="platform/frameworks/compile/mclinker" />
+  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-q-preview-1" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
   <project path="hardware/qcom/audio-caf/sdm845" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-845" />
@@ -30,6 +32,14 @@
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_hardware_ril" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_prebuilts_build-tools" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" revision="master" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
@@ -51,6 +61,9 @@
 
   <!-- Device resources, required by most device trees -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+
+  <!-- The rest of universe -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" />
 
   <!-- Private bits -->
   <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="master" />
