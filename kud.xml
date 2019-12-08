@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- KudProject's Unoffical LineageOS 16.0 - Custom additions/replacements -->
+<manifest>
+  <!-- KudProject remote -->
+  <remote name="kud"
+          fetch="../KudProject"
+          pushurl="ssh://git@github.com/KudProject" />
+
+  <!-- Code Aurora remote -->
+  <remote name="caf"
+          fetch="git://codeaurora.org" />
+
+  <!-- Replacements first... -->
+  <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_external_f2fs-tools" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/audio-caf/sdm845" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-845" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <project path="hardware/qcom/bt-caf" name="hardware_qcom_bt-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display-caf" groups="pdk-qcom,qcom,qcom_display" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/display-caf/sdm845" name="LineageOS/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-845" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf" groups="qcom,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
+  <project path="hardware/qcom/media-caf/sdm845" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-845" />
+  <remove-project name="LineageOS/android_hardware_qcom_wlan" />
+  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_hardware_ril" />
+  <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="av-aosp-qc.lnx.5.0" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="kud" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
+
+  <!-- Xiaomi Mi 9 SE (grus) -->
+  <project path="device/xiaomi/grus" name="device_xiaomi_grus" remote="kud" />
+  <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" remote="kud" />
+  <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="ten-on-pie" /> -->
+  <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" />
+
+  <!-- Device resources, required by most device trees -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
+
+  <!-- Private bits -->
+  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="master" />
+
+</manifest>
