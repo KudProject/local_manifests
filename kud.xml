@@ -4,7 +4,8 @@
   <!-- KudProject remote -->
   <remote name="kud"
           fetch="../KudProject"
-          pushurl="ssh://git@github.com/KudProject" />
+          pushurl="ssh://git@github.com/KudProject"
+          review="https://review.lineageos.org" />
 
   <!-- Code Aurora remote -->
   <remote name="caf"
