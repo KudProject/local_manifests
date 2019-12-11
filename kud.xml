@@ -57,7 +57,7 @@
   <!-- Xiaomi Mi 9 SE (grus) -->
   <project path="device/xiaomi/grus" name="device_xiaomi_grus" remote="kud" />
   <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" remote="kud" />
-  <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="ten-on-pie" /> -->
+  <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="pie" /> -->
   <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" />
 
   <!-- Device resources, required by most device trees -->
