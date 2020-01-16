@@ -24,7 +24,7 @@
   </project> -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
-  <remove-project name="platform/external/libavc" />
+  <remove-project name="LineageOS/android_external_libavc" />
   <project path="external/libavc" name="external_libavc" groups="pdk" remote="kud" revision="pie" />
   <remove-project name="platform/external/libmpeg2" />
   <project path="external/libmpeg2" name="external_libmpeg2" groups="pdk" remote="kud" revision="pie" />
