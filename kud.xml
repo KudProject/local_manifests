@@ -21,7 +21,9 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project> -->
+  </project>
+  <remove-project name="LineageOS/android_bootable_recovery" />
+  <project path="bootable/recovery" name="bootable_recovery-lineage" groups="pdk" remote="kud" /> -->
   <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_external_libavc" />
@@ -33,7 +35,7 @@
   <!-- <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
   <remove-project name="platform/frameworks/compile/mclinker" />
-  <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" remote="aosp" revision="refs/tags/android-q-preview-1" />
+  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="kud" revision="q-preview" />
   <!-- <remove-project name="LineageOS/android_hardware_interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="kud" />
   <remove-project name="LineageOS/android_hardware_libhardware" />
@@ -67,6 +69,10 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" revision="master" />
   <!-- <remove-project name="LineageOS/android_system_keymaster" />
   <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="kud" /> -->
+  <remove-project name="LineageOS/android_system_tools_aidl" />
+  <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="kud" revision="pie" />
+  <remove-project name="LineageOS/android_system_tools_hidl" />
+  <project path="system/tools/hidl" name="system_tools_hidl" groups="pdk" remote="kud" revision="pie" />
   <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
