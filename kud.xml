@@ -21,10 +21,10 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project>
+  </project> -->
   <remove-project name="LineageOS/android_bootable_recovery" />
-  <project path="bootable/recovery" name="bootable_recovery-lineage" groups="pdk" remote="kud" /> -->
-  <remove-project name="LineageOS/android_device_qcom_sepolicy" />
+  <project path="bootable/recovery" name="bootable_recovery-lineage" groups="pdk" remote="kud" />
+  <!-- <remove-project name="LineageOS/android_device_qcom_sepolicy" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_external_libavc" />
   <project path="external/libavc" name="external_libavc" groups="pdk" remote="kud" revision="pie" />
@@ -32,14 +32,14 @@
   <project path="external/libmpeg2" name="external_libmpeg2" groups="pdk" remote="kud" revision="pie" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
-  <!-- <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_frameworks_base" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
   <remove-project name="platform/frameworks/compile/mclinker" />
-  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="kud" revision="q-preview" />
+  <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="kud" revision="ten" />
   <!-- <remove-project name="LineageOS/android_hardware_interfaces" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="kud" />
   <remove-project name="LineageOS/android_hardware_libhardware" />
-  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="kud" /> -->
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="kud" />
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio-caf" groups="qcom,qcom_audio,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
   <project path="hardware/qcom/audio-caf/sdm845" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-845" />
@@ -55,25 +55,23 @@
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_hardware_ril" />
   <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
-  <!-- <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="kud" />
   <remove-project name="LineageOS/android_packages_services_Telephony" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
-  <remove-project name="LineageOS/android_prebuilts_build-tools" />
+  <remove-project name="platform/prebuilts/build-tools" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
-  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" groups="pdk,linux" clone-depth="1" remote="aosp" revision="master" />
   <!-- <remove-project name="LineageOS/android_system_keymaster" />
   <project path="system/keymaster" name="system_keymaster" groups="pdk" remote="kud" /> -->
-  <remove-project name="LineageOS/android_system_tools_aidl" />
-  <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="kud" revision="pie" />
-  <remove-project name="LineageOS/android_system_tools_hidl" />
-  <project path="system/tools/hidl" name="system_tools_hidl" groups="pdk" remote="kud" revision="pie" />
-  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="platform/system/tools/aidl" />
+  <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="kud" revision="ten" />
+  <remove-project name="platform/system/tools/hidl" />
+  <project path="system/tools/hidl" name="system_tools_hidl" groups="pdk" remote="kud" revision="ten" />
+  <!-- <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="av-aosp-qc.lnx.5.0" />
@@ -84,29 +82,28 @@
   <remove-project name="LineageOS/android_vendor_qcom_opensource_dataservices" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces" />
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" remote="kud" /> -->
 
-  <!-- Xiaomi Mi 9 SE (grus) -->
+  <!-- Xiaomi Mi 9 SE (grus)
   <project path="device/xiaomi/grus" name="device_xiaomi_grus" remote="kud" />
   <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" remote="kud" />
-  <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="pie" /> -->
-  <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" />
+  <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="pie" />
+  <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" /> -->
 
   <!-- Xiaomi Redmi Note 4(X) (mido) -->
-  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" />
-  <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" />
+  <project path="device/xiaomi/mido" name="krasCGQ/device_xiaomi_mido" remote="private" />
+  <project path="device/xiaomi/msm8953-common" name="krasCGQ/device_xiaomi_msm8953-common" remote="private" />
   <!-- <project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" /> -->
   <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="kud" revision="p" />
-  <project path="vendor/xiaomi/msm8953-common" name="vendor_xiaomi_msm8953-common" remote="kud" revision="p" />
+  <project path="vendor/xiaomi/msm8953-common" name="krasCGQ/vendor_xiaomi_msm8953-common" remote="private" />
 
   <!-- Additional resources -->
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
-  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" /> -->
+  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.x" name="RaphielGang/aarch64-linux-gnu-8.x" clone-depth="1" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-8.x" name="RaphielGang/arm-linux-gnueabi-8.x" clone-depth="1" revision="master" />
-  <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" />
+  <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" /> -->
 
   <!-- Private bits -->
-  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="master" />
+  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="ten" />
 
 </manifest>
