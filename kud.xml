@@ -71,9 +71,9 @@
   <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="kud" revision="ten" />
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="system_tools_hidl" groups="pdk" remote="kud" revision="ten" />
-  <!-- <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
-  <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <!-- <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="av-aosp-qc.lnx.5.0" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="kud" />
@@ -92,10 +92,8 @@
 
   <!-- Xiaomi Redmi Note 4(X) (mido) -->
   <project path="device/xiaomi/mido" name="krasCGQ/device_xiaomi_mido" remote="private" />
-  <project path="device/xiaomi/msm8953-common" name="krasCGQ/device_xiaomi_msm8953-common" remote="private" />
   <!-- <project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" /> -->
-  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="kud" revision="p" />
-  <project path="vendor/xiaomi/msm8953-common" name="krasCGQ/vendor_xiaomi_msm8953-common" remote="private" />
+  <project path="vendor/xiaomi" name="zeelog/proprietary_vendor_xiaomi" />
 
   <!-- Additional resources -->
   <!-- <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" />
