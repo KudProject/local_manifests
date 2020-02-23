@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- KudProject's Unoffical LineageOS 16.0 - Custom additions/replacements -->
+<!-- KudProject's Unoffical LineageOS 17.1 - Custom additions/replacements -->
 <manifest>
   <!-- KudProject remote -->
   <remote name="kud"
@@ -96,9 +96,7 @@
   <project path="vendor/xiaomi" name="zeelog/proprietary_vendor_xiaomi" />
 
   <!-- Additional resources -->
-  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.x" name="RaphielGang/aarch64-linux-gnu-8.x" clone-depth="1" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-8.x" name="RaphielGang/arm-linux-gnueabi-8.x" clone-depth="1" revision="master" />
+  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r377782b" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" revision="r377782b" />
   <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" /> -->
 
   <!-- Private bits -->
