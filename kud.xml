@@ -36,9 +36,9 @@
   <remove-project name="platform/external/libmpeg2" />
   <project path="external/libmpeg2" name="external_libmpeg2" groups="pdk" remote="kud" revision="pie" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
-  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" /> -->
   <remove-project name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" />
   <remove-project name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="kud" revision="ten" />
   <!-- <remove-project name="LineageOS/android_hardware_interfaces" />
@@ -59,10 +59,10 @@
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
   <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_hardware_ril" />
-  <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" />
+  <project path="hardware/ril-caf" name="hardware_ril-caf" groups="qcom,pdk-qcom" remote="kud" /> -->
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="kud" />
-  <remove-project name="LineageOS/android_packages_services_Telephony" />
+  <!-- <remove-project name="LineageOS/android_packages_services_Telephony" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
   <remove-project name="platform/prebuilts/build-tools" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
