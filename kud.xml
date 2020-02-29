@@ -22,7 +22,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project> -->
-  <remove-project path="LineageOS/android_build_soong" />
+  <remove-project name="LineageOS/android_build_soong" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="kud" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
