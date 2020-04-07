@@ -94,9 +94,9 @@
   <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" /> -->
 
   <!-- Xiaomi Redmi Note 4(X) (mido) -->
-  <project path="device/xiaomi/mido" name="krasCGQ/device_xiaomi_mido" remote="private" revision="10.0" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" revision="10.0" />
   <!--<project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" />-->
-  <project path="vendor/xiaomi" name="krasCGQ/proprietary_vendor_xiaomi" remote="private" />
+  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
 
   <!-- Additional resources -->
   <!-- <project path="prebuilts/clang/host/linux-x86/clang-r377782b" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" revision="r377782b" />
