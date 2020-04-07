@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- KudProject's Unofficial LineageOS 16.0 - Project removals -->
+<!-- AIMROM (Android 10) - Project removals -->
 <manifest>
-  <remove-project name="LineageOS/android" />
   <remove-project name="LineageOS/android_device_generic_goldfish" />
   <remove-project name="LineageOS/android_device_lineage_atv" />
   <remove-project name="LineageOS/android_hardware_broadcom_libbt" />
   <remove-project name="LineageOS/android_hardware_broadcom_nfc" />
   <remove-project name="LineageOS/android_hardware_qcom_sdm845_display" />
   <!-- <remove-project name="LineageOS/android_packages_apps_OpenWeatherMapProvider" /> -->
-  <remove-project name="LineageOS/android_packages_apps_Updater" />
   <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <remove-project name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
   <remove-project name="LineageOS/ansible" />
@@ -22,6 +20,9 @@
   <remove-project name="LineageOS/scripts" />
   <remove-project name="LineageOS/slackbot" />
   <remove-project name="LineageOS/www" />
+
+  <remove-project name="device_qcom_sepolicy" /> <!-- Re-add when grus has Q -->
+  <remove-project name="manifest" />
 
   <remove-project name="device/common" />
   <remove-project name="device/generic/arm64" />

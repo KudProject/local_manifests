@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- KudProject's Unoffical LineageOS 17.1 - Custom additions/replacements -->
+<!-- AIMROM (Android 10) - Custom additions/replacements -->
 <manifest>
   <!-- KudProject remote -->
   <remote name="kud"
@@ -21,12 +21,12 @@
     <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
-  </project> -->
+  </project>
   <remove-project name="LineageOS/android_build_soong" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="kud" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
-  </project>
+  </project> -->
   <remove-project name="LineageOS/android_bootable_recovery" />
   <project path="bootable/recovery" name="bootable_recovery-lineage" groups="pdk" remote="kud" />
   <!-- <remove-project name="LineageOS/android_device_qcom_sepolicy" />
@@ -36,9 +36,9 @@
   <remove-project name="platform/external/libmpeg2" />
   <project path="external/libmpeg2" name="external_libmpeg2" groups="pdk" remote="kud" revision="pie" />
   <remove-project name="LineageOS/android_external_f2fs-tools" />
-  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" /> -->
+  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="pdk" remote="kud" revision="lineage-16.0-dev" />
   <remove-project name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
   <remove-project name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/mclinker" name="frameworks_compile_mclinker" groups="pdk" remote="kud" revision="ten" />
   <!-- <remove-project name="LineageOS/android_hardware_interfaces" />
@@ -57,10 +57,10 @@
   <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media-caf" groups="qcom,pdk-qcom" remote="kud" revision="lineage-16.0/msm8996" />
   <project path="hardware/qcom/media-caf/sdm845" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-845" />
   <remove-project name="LineageOS/android_hardware_qcom_wlan" />
-  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" /> -->
+  <project path="hardware/qcom/wlan-caf" name="hardware_qcom_wlan-caf" groups="qcom_wlan,pdk-qcom" remote="kud" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="kud" />
-  <!-- <remove-project name="LineageOS/android_packages_services_Telephony" />
+  <remove-project name="LineageOS/android_packages_services_Telephony" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
   <remove-project name="platform/prebuilts/build-tools" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
@@ -74,9 +74,9 @@
   <project path="system/tools/aidl" name="system_tools_aidl" groups="pdk" remote="kud" revision="ten" />
   <remove-project name="platform/system/tools/hidl" />
   <project path="system/tools/hidl" name="system_tools_hidl" groups="pdk" remote="kud" revision="ten" />
-  <remove-project name="LineageOS/android_vendor_lineage" />
+  <!-- <remove-project name="LineageOS/android_vendor_lineage" />
   <project path="vendor/lineage" name="vendor_lineage" remote="kud" />
-  <!-- <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_audio" />
   <project path="vendor/qcom/opensource/audio" name="platform/vendor/qcom-opensource/audio" groups="qcom,pdk-qcom" remote="caf" revision="av-aosp-qc.lnx.5.0" />
   <remove-project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" remote="kud" />
@@ -94,9 +94,9 @@
   <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" /> -->
 
   <!-- Xiaomi Redmi Note 4(X) (mido) -->
-  <project path="device/xiaomi/mido" name="krasCGQ/device_xiaomi_mido" remote="private" />
-  <!-- <project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" /> -->
-  <project path="vendor/xiaomi" name="zeelog/proprietary_vendor_xiaomi" />
+  <project path="device/xiaomi/mido" name="krasCGQ/device_xiaomi_mido" remote="private" revision="10.0" />
+  <!--<project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" />-->
+  <project path="vendor/xiaomi" name="krasCGQ/proprietary_vendor_xiaomi" remote="private" />
 
   <!-- Additional resources -->
   <!-- <project path="prebuilts/clang/host/linux-x86/clang-r377782b" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" revision="r377782b" />
