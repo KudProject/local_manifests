@@ -92,18 +92,8 @@
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" remote="kud" revision="pie" /> -->
   <project path="vendor/xiaomi/sdm710-common" name="vendor_xiaomi_sdm710-common" clone-depth="1" remote="kud" revision="p" />
 
-  <!-- Xiaomi Redmi Note 4(X) (mido) -->
-  <project path="device/xiaomi/mido" name="device_xiaomi_mido" remote="kud" />
-  <project path="device/xiaomi/msm8953-common" name="device_xiaomi_msm8953-common" remote="kud" />
-  <!-- <project path="kernel/xiaomi/msm8953-3.18" name="kernel_xiaomi_msm8953-3.18" remote="kud" /> -->
-  <project path="vendor/xiaomi/mido" name="vendor_xiaomi_mido" remote="kud" revision="p" />
-  <project path="vendor/xiaomi/msm8953-common" name="vendor_xiaomi_msm8953-common" remote="kud" revision="p" />
-
   <!-- Additional resources -->
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" />
-  <!-- <project path="prebuilts/clang/host/linux-x86/clang-r370808" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" groups="pdk" revision="10.0" /> -->
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-8.x" name="RaphielGang/aarch64-linux-gnu-8.x" clone-depth="1" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-8.x" name="RaphielGang/arm-linux-gnueabi-8.x" clone-depth="1" revision="master" />
   <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" />
 
   <!-- Private bits -->
