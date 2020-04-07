@@ -12,7 +12,7 @@
           fetch="git://codeaurora.org" />
 
   <!-- Replacements first... -->
-  <remove project name="LineageOS/android_build" />
+  <remove-project name="LineageOS/android_build" />
   <project path="build/make" name="android_build" groups="pdk" remote="kud">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
