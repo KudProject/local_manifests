@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- KudProject's Unofficial TWRP builds - Custom additions/replacements -->
 <manifest>
   <!-- Remotes -->
   <remote name="kud"
           fetch="git://github.com/KudProject"
-          pushurl="ssh://git@github.com/KudProject" />
+          pushurl="ssh://git@github.com/KudProject"
+          revision="android-9.0" />
 
   <remote name="gh-private"
           fetch="ssh://git@github.com" />
 
-  <!-- Replacements -->
-  <remove-project name="android_external_f2fs-tools" />
+  <!-- Replacements first -->
   <remove-project name="platform/bootable/recovery" />
-
-  <!-- Custom additions -->
-  <project path="bootable/recovery" name="bootable_recovery" remote="kud" revision="android-9.0" />
-  <project path="device/xiaomi/grus" name="device_xiaomi_grus-twrp" remote="kud" revision="android-9.0" />
-  <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" revision="android-9.0" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="kud" />
+  <remove-project name="android_external_f2fs-tools" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie-dev" />
-  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="gh-private" revision="pie" />
+
+  <!-- Resources -->
+  <project path="device/xiaomi/grus" name="device_xiaomi_grus-twrp" remote="kud" />
+  <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" />
+  <project path="vendor/kud" name="KudProject/vendor_kud" remote="gh-private" revision="pie" />
   <project path="vendor/qcom/opensource/commonsys" name="android_vendor_qcom_opensource_commonsys" remote="omnirom" revision="android-9.0" />
+
 </manifest>

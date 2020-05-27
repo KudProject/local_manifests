@@ -60,7 +60,9 @@
   <remove-project name="android_vendor_qcom_opensource_interfaces" />
 
   <!-- Remove from AOSP projects -->
-  <remove-project name="platform/compatibility/cdd" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
   <remove-project name="platform/cts" />
   <remove-project name="platform/external/abi-compliance-checker" />
   <remove-project name="platform/external/abi-dumper" />
