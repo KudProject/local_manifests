@@ -12,7 +12,7 @@
 
   <!-- Replacements first -->
   <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="kud" />
+  <project path="bootable/recovery" name="bootable_recovery-twrp" remote="kud" />
   <remove-project name="android_external_f2fs-tools" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie-dev" />
 
