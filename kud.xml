@@ -62,7 +62,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="kud" />
   <remove-project name="LineageOS/android_packages_services_Telephony" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="kud" /> -->
-  <remove-project name="platform/prebuilts/build-tools" />
+  <remove-project name="LineageOS/android_prebuilts_build-tools" />
   <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="pdk" clone-depth="1" remote="aosp" revision="master" />
   <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
@@ -99,6 +99,7 @@
   <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi" remote="kud" />
 
   <!-- Additional resources -->
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" />
   <!-- <project path="prebuilts/clang/host/linux-x86/clang-r377782b" name="prebuilts_clang_host_linux-x86" groups="pdk" remote="kud" revision="r377782b" />
   <project path="vendor/xiaomi/MiuiCamera" name="vendor_xiaomi_MiuiCamera" remote="kud" revision="mkp" /> -->
 
