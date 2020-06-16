@@ -17,6 +17,7 @@
   <project path="external/f2fs-tools" name="external_f2fs-tools" remote="kud" revision="pie" />
 
   <!-- Resources -->
+  <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" />
   <project path="device/xiaomi/grus" name="device_xiaomi_grus-twrp" remote="kud" />
   <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" />
   <project path="vendor/kud" name="KudProject/vendor_kud" remote="gh-private" revision="pie" />
