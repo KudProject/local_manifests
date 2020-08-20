@@ -16,11 +16,21 @@
   <project path="bootable/recovery-twrp" name="bootable_recovery-twrp" remote="kud" revision="android-9.0" />
   <project path="device/huawei/scale" name="device_huawei_scale" remote="kud" revision="N" />
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" />
+  <project path="device/samsung/exynos5410-common" name="device_samsung_exynos5410-common" remote="kud" revision="N" />
+  <project path="device/samsung/ja3gxx" name="device_samsung_ja3gxx" remote="kud" revision="N" />
   <project path="external/busybox" name="LineageOS/android_external_busybox" />
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" />
   <project path="external/stlport" name="LineageOS/android_external_stlport" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+  <project path="hardware/samsung_slsi-cm/exynos" name="LineageOS/android_hardware_samsung_slsi-cm_exynos" />
+  <project path="hardware/samsung_slsi-cm/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" />
+  <project path="hardware/samsung_slsi-cm/exynos5410" name="exynos5410/android_hardware_samsung_slsi-cm_exynos5410" />
+  <project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" />
   <!-- <project path="kernel/huawei/msm8916" name="KudProject/kernel_huawei_msm8916" remote="kud" /> -->
+  <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" clone-depth="1" />
+  <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" />
   <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="kud" />
   <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="pie" />
+  <project path="vendor/samsung" name="exynos5410/proprietary_vendor_samsung" clone-depth="1" />
 
 </manifest>
