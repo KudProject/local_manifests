@@ -29,8 +29,8 @@
   <!-- <project path="kernel/huawei/msm8916" name="KudProject/kernel_huawei_msm8916" remote="kud" /> -->
   <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" clone-depth="1" />
   <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" />
-  <project path="vendor/huawei" name="proprietary_vendor_huawei" remote="kud" />
-  <project path="vendor/kud" name="krasCGQ/vendor_kud" remote="private" revision="pie" />
+  <project path="vendor/huawei" name="KudProject/proprietary_vendor_huawei" remote="private" />
+  <project path="vendor/kud" name="KudProject/vendor_kud" remote="private" revision="pie" />
   <project path="vendor/samsung" name="exynos5410/proprietary_vendor_samsung" clone-depth="1" />
 
 </manifest>
