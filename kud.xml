@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="private" fetch="ssh://git@github.com/" />
-  <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="ten" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
+  <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
 </manifest>
