@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
+  <remote name="wave" fetch="https://github.com/Wave-Project" revision="r" />
   <remote name="private" fetch="ssh://git@github.com/" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="external_libpng" groups="pdk,wave" remote="wave" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="external_sqlite" groups="pdk,wave" remote="wave" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
 </manifest>
