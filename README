@@ -1,0 +1,13 @@
+To sync the local manifest properly, do repo sync like you usually do:
+
+    repo sync -j[threads]
+
+
+Then repeat repo sync but with fetch-submodules switch for hardware/qcom-caf/sdm660 project:
+
+    repo sync --fetch-submodules hardware/qcom-caf/sdm660
+
+
+And finally submodule init the project, from top folder of ROM source:
+
+    git -C hardware/qcom-caf/sdm660 submodule update --init
