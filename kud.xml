@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
   <remote name="wave" fetch="https://github.com/Wave-Project" revision="r" />
   <remote name="private" fetch="ssh://git@github.com/" />
+
+  <project path="device/asus/X00T" name="device_asus_X00T" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
 
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
@@ -17,6 +20,8 @@
   <remove-project name="android_hardware_qcom_display" />
   <remove-project name="android_hardware_qcom_media" />
 
+  <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
+
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
@@ -27,5 +32,6 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
+  <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
 </manifest>
