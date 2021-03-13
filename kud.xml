@@ -17,8 +17,13 @@
 
   <project path="hardware/qcom-caf/sdm660" name="hardware_qcom-caf_sdm660" groups="kud" remote="kud" revision="lineage-18.1" />
   <remove-project name="android_hardware_qcom_audio" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="lineage,pdk-qcom,qcom,qcom_audio" remote="lineage" revision="lineage-18.1-caf-sdm845" />
   <remove-project name="android_hardware_qcom_display" />
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" groups="lineage,pdk-qcom,qcom,qcom_display" remote="lineage" revision="lineage-18.1-caf-sdm845" />
   <remove-project name="android_hardware_qcom_media" />
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" groups="lineage,pdk-qcom,qcom" remote="lineage" revision="lineage-18.1-caf-sdm845" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="lineage,pdk-qcom,qcom" remote="lineage" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" groups="lineage" remote="lineage" />
 
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
 
@@ -34,4 +39,7 @@
 
   <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="lineage,qcom,pdk" remote="lineage" />
 </manifest>
