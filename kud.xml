@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote name="aospa-blobs" fetch="https://github.com/ThankYouMario" revision="ruby" />
   <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
@@ -42,6 +43,7 @@
 
   <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" groups="aospa" clone-depth="1" remote="aospa-blobs" />
   <project path="vendor/xiaomi" name="KudProject/proprietary_vendor_xiaomi" groups="kud,xiaomi-sdm710" remote="private" revision="dot11-grus" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
