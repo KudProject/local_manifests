@@ -13,6 +13,8 @@
 
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
+  <remove-project name="platform/external/chromium-webview" />
+  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="lineage,pdk" clone-depth="1" remote="lineage" revision="master" />
   <remove-project name="platform/external/libpng" />
   <project path="external/libpng" name="external_libpng" groups="pdk,wave" remote="wave" />
   <remove-project name="platform/external/sqlite" />
