@@ -4,7 +4,6 @@
   <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
-  <remote name="wave" fetch="https://github.com/Wave-Project" revision="r" />
   <remote name="private" fetch="ssh://git@github.com/" />
 
   <project path="device/asus/X00T" name="device_asus_X00T" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
@@ -16,9 +15,9 @@
   <remove-project name="platform/external/chromium-webview" />
   <project path="external/chromium-webview" name="android_external_chromium-webview" groups="lineage,pdk" clone-depth="1" remote="lineage" revision="master" />
   <remove-project name="platform/external/libpng" />
-  <project path="external/libpng" name="external_libpng" groups="pdk,wave" remote="wave" />
+  <project path="external/libpng" name="external_libpng" groups="kud,pdk" remote="kud" revision="android-11.0" />
   <remove-project name="platform/external/sqlite" />
-  <project path="external/sqlite" name="external_sqlite" groups="pdk,wave" remote="wave" />
+  <project path="external/sqlite" name="external_sqlite" groups="kud,pdk" remote="kud" revision="android-11.0" />
 
   <project path="hardware/qcom-caf/sdm660" name="hardware_qcom-caf_sdm660" groups="kud" remote="kud" revision="lineage-18.1" />
   <remove-project name="android_hardware_qcom_audio" />
