@@ -2,6 +2,7 @@
 <manifest>
   <remote name="aospa-blobs" fetch="https://github.com/ThankYouMario" revision="ruby" />
   <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
+  <remote name="crdroid" fetch="https://github.com/crdroidandroid" revision="11.0" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
   <remote name="private" fetch="ssh://git@github.com/" />
@@ -15,9 +16,9 @@
   <remove-project name="platform/external/chromium-webview" />
   <project path="external/chromium-webview" name="android_external_chromium-webview" groups="lineage,pdk" clone-depth="1" remote="lineage" revision="master" />
   <remove-project name="platform/external/libpng" />
-  <project path="external/libpng" name="external_libpng" groups="kud,pdk" remote="kud" revision="android-11.0" />
+  <project path="external/libpng" name="android_external_libpng" groups="crdroid,pdk" remote="crdroid" />
   <remove-project name="platform/external/sqlite" />
-  <project path="external/sqlite" name="external_sqlite" groups="kud,pdk" remote="kud" revision="android-11.0" />
+  <project path="external/sqlite" name="android_external_sqlite" groups="crdroid,pdk" remote="crdroid" />
 
   <project path="hardware/qcom-caf/sdm660" name="hardware_qcom-caf_sdm660" groups="kud" remote="kud" revision="lineage-18.1" />
   <remove-project name="android_hardware_qcom_audio" />
