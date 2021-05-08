@@ -20,9 +20,10 @@
   </project>
    -->
 
-  <!-- Android Runtime -->
-  <remove-project name="platform/art" />
+  <!-- Android Runtime
+  <remove-project name="android_art" />
   <project path="art" name="android_art" groups="pdk" remote="workspace" />
+   -->
 
   <!-- Bionic libc
   <remove-project name="android_bionic" />
