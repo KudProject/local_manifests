@@ -49,6 +49,8 @@
   <project path="tools/extract-utils" name="android_tools_extract-utils" groups="lineage" remote="lineage" />
 
   <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
+  <remove-project name="android_vendor_codeaurora_telephony" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" groups="crdroid" remote="crdroid" />
   <project path="vendor/extra" name="vendor_extra" groups="kud" remote="kud" revision="android-11.0" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" groups="aospa" clone-depth="1" remote="aospa-blobs" />
