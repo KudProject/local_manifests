@@ -7,6 +7,9 @@
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
   <remote name="private" fetch="ssh://git@github.com/" />
 
+  <remove-project name="android_bootable_recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="lineage,pdk" remote="lineage" />
+
   <project path="device/asus/X00T" name="device_asus_X00T" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
   <project path="device/xiaomi/grus" name="device_xiaomi_grus" groups="kud,xiaomi-sdm710" remote="kud" revision="dot11" />
   <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" groups="kud,xiaomi-sdm710" remote="kud" revision="dot11" />

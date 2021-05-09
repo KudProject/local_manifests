@@ -30,6 +30,11 @@
   <project path="bionic" name="android_bionic" groups="pdk" remote="workspace" />
    -->
 
+  <!-- Recovery
+  <remove-project name="android_bootable_recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="workspace" />
+   -->
+
   <!-- Frameworks
   <remove-project name="android_frameworks_av" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="workspace" />
