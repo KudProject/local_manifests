@@ -46,6 +46,9 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
   <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
+  <remove-project name="android_system_sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="lineage,pdk" remote="lineage" />
+
   <project path="tools/extract-utils" name="android_tools_extract-utils" groups="lineage" remote="lineage" />
 
   <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />

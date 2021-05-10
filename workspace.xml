@@ -54,6 +54,11 @@
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" groups="pdk-fs" clone-depth="1" remote="workspace" />
    -->
 
+  <!-- System
+  <remove-project name="android_system_sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="workspace" />
+   -->
+
   <!-- Vendor
   <remove-project name="android_vendor_dot" />
   <project path="vendor/dot" name="android_vendor_dot" remote="workspace" /> -->
