@@ -23,6 +23,7 @@
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="android_external_sqlite" groups="crdroid,pdk" remote="crdroid" />
 
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="lineage,pdk-qcom,qcom" remote="lineage" revision="lineage-18.1-caf" />
   <project path="hardware/qcom-caf/sdm660" name="hardware_qcom-caf_sdm660" groups="kud" remote="kud" revision="lineage-18.1" />
   <remove-project name="android_hardware_qcom_audio" />
   <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" groups="lineage,pdk-qcom,qcom,qcom_audio" remote="lineage" revision="lineage-18.1-caf-sdm845" />
