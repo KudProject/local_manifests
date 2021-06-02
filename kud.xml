@@ -31,12 +31,12 @@
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display-caf" groups="kud,pdk-qcom,qcom,qcom_display" remote="kud" revision="lineage-18.1/sdm845" />
   <remove-project name="android_hardware_qcom_media" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm845" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" groups="lineage" remote="lineage" />
 
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" groups="kud,xiaomi-sdm710" remote="kud" revision="android-11.0" /> -->
 
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+  <remove-project name="kdrag0n/proton-clang" />
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" groups="lineage" clone-depth="1" remote="lineage" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
@@ -61,5 +61,4 @@
   <project path="vendor/xiaomi" name="KudProject/proprietary_vendor_xiaomi" groups="kud,xiaomi-sdm710" remote="private" revision="dot11-grus" />
   <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
   <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" groups="lineage" remote="lineage" revision="lineage-18.1-pn5xx" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="lineage,qcom,pdk" remote="lineage" />
 </manifest>
