@@ -2,6 +2,7 @@
 <manifest>
   <remote name="aospa-blobs" fetch="https://github.com/ThankYouMario" revision="ruby" />
   <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
+  <remote name="calyx" fetch="https://gitlab.com/CalyxOS" revision="android11-qpr1" />
   <remote name="crdroid" fetch="https://github.com/crdroidandroid" revision="11.0" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
@@ -17,7 +18,6 @@
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
   <remove-project name="platform/external/chromium-webview" />
-  <project path="external/chromium-webview" name="android_external_chromium-webview" groups="lineage,pdk" clone-depth="1" remote="lineage" revision="master" />
   <remove-project name="platform/external/libpng" />
   <project path="external/libpng" name="android_external_libpng" groups="crdroid,pdk" remote="crdroid" />
   <remove-project name="platform/external/sqlite" />
@@ -35,6 +35,10 @@
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" groups="kud,xiaomi-sdm710" remote="kud" revision="android-11.0" /> -->
 
+  <remove-project name="android_packages_apps_Jelly" />
+
+  <project path="prebuilts/calyx/chromium/arm" name="platform_prebuilts_calyx_chromium_arm" groups="calyx" clone-depth="1" remote="calyx" />
+  <project path="prebuilts/calyx/chromium/arm64" name="platform_prebuilts_calyx_chromium_arm64" groups="calyx" clone-depth="1" remote="calyx" />
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="kdrag0n/proton-clang" />
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" groups="lineage" clone-depth="1" remote="lineage" />
