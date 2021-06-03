@@ -18,6 +18,8 @@
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" groups="kud,pdk" remote="kud" revision="android-11.0" />
   <remove-project name="platform/external/libpng" />
   <project path="external/libpng" name="android_external_libpng" groups="crdroid,pdk" remote="crdroid" />
   <remove-project name="platform/external/sqlite" />
