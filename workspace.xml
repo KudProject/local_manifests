@@ -35,6 +35,11 @@
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="workspace" />
    -->
 
+  <!-- Device
+  <remove-project name="android_device_dot_sepolicy" />
+  <project path="device/dot/sepolicy" name="android_device_dot_sepolicy" remote="workspace" />
+   -->
+
   <!-- Frameworks
   <remove-project name="android_frameworks_av" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="workspace" />
