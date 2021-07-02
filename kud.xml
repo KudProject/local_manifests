@@ -15,7 +15,7 @@
   <project path="device/xiaomi/alioth" name="KudProject/device_xiaomi_alioth" groups="kud,xiaomi-kona" remote="private" revision="dot11" />
   <project path="device/xiaomi/grus" name="device_xiaomi_grus" groups="kud,xiaomi-sdm710" remote="kud" revision="dot11" />
   <project path="device/xiaomi/sdm710-common" name="device_xiaomi_sdm710-common" groups="kud,xiaomi-sdm710" remote="kud" revision="dot11" />
-  <project path="device/xiaomi/sm8250-common" name="KudProject/device_xiaomi_sm8250-common" groups="kud,xiaomi-kona" remote="private" revision="dot11" />
+  <project path="device/xiaomi/sm8250-common" name="KudProject/sm8250-common-priv" groups="kud,xiaomi-kona" remote="private" revision="dot11" />
 
   <remove-project name="platform/external/arm-optimized-routines" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" groups="hentai,pdk" remote="hentai" />
@@ -59,7 +59,7 @@
 
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" groups="kud,xiaomi-sdm710" remote="kud" revision="android-11.0" /> -->
-  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" groups="kud,xiaomi-kona" remote="kud" revision="lineage-18.1-test" />
+  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" groups="kud,xiaomi-kona" remote="kud" revision="lineage-18.1" />
 
   <remove-project name="android_packages_apps_Jelly" />
 
