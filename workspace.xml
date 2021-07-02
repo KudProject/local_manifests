@@ -67,5 +67,4 @@
   <!-- Vendor
   <remove-project name="android_vendor_dot" />
   <project path="vendor/dot" name="android_vendor_dot" remote="workspace" /> -->
-  <project path="vendor/prebuilts" name="android_vendor_prebuilts" remote="workspace" />
 </manifest>
