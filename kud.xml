@@ -6,6 +6,7 @@
   <remote name="crdroid" fetch="https://github.com/crdroidandroid" revision="11.0" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
+  <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
   <remote name="private" fetch="ssh://git@github.com/" />
 
   <remove-project name="android_bootable_recovery" />
@@ -22,6 +23,10 @@
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/f2fs-tools" />
   <project path="external/f2fs-tools" name="external_f2fs-tools" groups="kud,pdk" remote="kud" revision="android-11.0" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc_new" groups="pdk,proton" remote="proton" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" groups="crdroid,pdk" remote="crdroid" />
   <remove-project name="platform/external/libpng" />
   <project path="external/libpng" name="android_external_libpng" groups="crdroid,pdk" remote="crdroid" />
   <remove-project name="platform/external/sqlite" />
