@@ -40,6 +40,11 @@
   <project path="device/dot/sepolicy" name="android_device_dot_sepolicy" remote="workspace" />
    -->
 
+  <!-- External -->
+  <project path="external/redhat-fonts" name="android_external_redhat-fonts" remote="workspace" revision="rvc-qpr3" />
+  <remove-project name="platform/external/roboto-fonts" />
+  <project path="external/roboto-fonts" name="android_external_roboto_fonts" groups="pdk" clone-depth="1" remote="workspace" revision="rvc-qpr3" />
+
   <!-- Frameworks
   <remove-project name="android_frameworks_av" />
   <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="workspace" />
