@@ -66,7 +66,8 @@
 
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" groups="kud,xiaomi-sdm710" remote="kud" revision="android-11.0" /> -->
-  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" groups="kud,xiaomi-kona" remote="kud" revision="lineage-18.1" />
+  <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" groups="kud,xiaomi-kona" remote="kud" revision="lineage-18.1-temp" />
+  <project path="kernel/xiaomi/sm8250/arch/arm64/boot/dts/vendor" name="KudProject/kernel_qcom_devicetree" groups="kud,xiaomi-kona" remote="private" revision="android11-qpr3-xiaomi-kona" />
 
   <remove-project name="android_packages_apps_Jelly" />
 
