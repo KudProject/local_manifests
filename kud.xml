@@ -56,7 +56,7 @@
   <remove-project name="android_hardware_qcom_media" />
   <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm660-4.19" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm845" />
-  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="lineage,pdk-qcom,qcom" remote="lineage" revision="lineage-18.1-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/kona" />
   <remove-project name="android_hardware_qcom_sdm845_data_ipacfg-mgr" />
   <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="android_hardware_qcom_sdm845_data_ipacfg-mgr" groups="dot,generic_fs,vendor,qcom_sdm845" remote="dot" >
     <!-- use AOSP guard for now, matching LineageOS behavior -->
