@@ -72,6 +72,7 @@
 
   <remove-project name="android_packages_apps_Jelly" />
 
+  <project path="packages/apps/F-DroidPrivilegedExtension" name="platform_packages_apps_F-DroidPrivilegedExtension" groups="calyx" remote="calyx" />
   <project path="prebuilts/calyx/chromium/arm" name="platform_prebuilts_calyx_chromium_arm" groups="calyx" clone-depth="1" remote="calyx" revision="9fb6ea224a8eeef709284a2f0adef4c6e49e8301" />
   <project path="prebuilts/calyx/chromium/arm64" name="platform_prebuilts_calyx_chromium_arm64" groups="calyx" clone-depth="1" remote="calyx" revision="bed02eeed4c9f76e6ca135c5126787b825a2951b" />
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
