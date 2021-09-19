@@ -41,7 +41,6 @@
    -->
 
   <!-- External -->
-  <project path="external/redhat-fonts" name="android_external_redhat-fonts" remote="workspace" revision="rvc-qpr3" />
   <remove-project name="platform/external/roboto-fonts" />
   <project path="external/roboto-fonts" name="android_external_roboto-fonts" groups="pdk" clone-depth="1" remote="workspace" revision="rvc-qpr3" />
 
@@ -59,10 +58,14 @@
   <project path="libcore" name="android_libcore" groups="pdk" remote="workspace" revision="rvc-qpr3" />
 
   <!-- Packages
+  <remove-project name="platform/packages/apps/PermissionController" />
+  <project path="packages/apps/PermissionController" name="android_packages_apps_PermissionController" groups="pdk-cw-fs,pdk-fs" remote="workspace" />
   <remove-project name="android_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="workspace" />
   <remove-project name="android_packages_apps_TouchGestures" />
-  <project path="packages/apps/TouchGestures" name="android_packages_apps_Settings" remote="workspace" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="workspace" />
+  <remove-project name="android_packages_providers_DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="workspace" />
    -->
 
   <!-- Prebuilts
@@ -75,8 +78,11 @@
   <project path="system/core" name="android_system_core" groups="pdk" remote="workspace" /> -->
   <remove-project name="platform/system/hardware/interfaces" />
   <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" groups="pdk" remote="workspace" revision="rvc-qpr3" />
-  <!-- <remove-project name="android_system_sepolicy" />
-  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="workspace" /> -->
+  <!-- <remove-project name="android_system_netd" />
+  <project path="system/core" name="android_system_netd" groups="pdk" remote="workspace" />
+  <remove-project name="android_system_sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="workspace" />
+   -->
 
   <!-- Tools -->
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="workspace" revision="lineage-18.1" />

@@ -2,10 +2,12 @@
 <manifest>
   <remote name="aospa-blobs" fetch="https://github.com/ThankYouMario" revision="ruby" />
   <remote name="asus-sdm660" fetch="https://gitlab.com/asus-sdm660-4.19" revision="lineage-18.1-4.19" />
+  <remote name="caf" fetch="https://source.codeaurora.org/quic/la" />
   <remote name="calyx" fetch="https://gitlab.com/CalyxOS" revision="android11-qpr1" />
   <remote name="crdroid" fetch="https://github.com/crdroidandroid" revision="11.0" />
   <remote name="hentai" fetch="https://github.com/hentaiOS" revision="Rika" />
   <remote name="kud" fetch="https://github.com/KudProject" pushurl="ssh://git@github.com/KudProject" />
+  <remote name="kud-gitlab" fetch="https://gitlab.com/KudProject" pushurl="ssh://git@gitlab.com/KudProject" />
   <remote name="proton" fetch="https://github.com/ProtonAOSP" revision="rvc" />
   <remote name="private" fetch="ssh://git@github.com/" />
 
@@ -58,14 +60,19 @@
   <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm660-4.19" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/sdm845" />
   <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom_media-caf" groups="kud,pdk-qcom,qcom" remote="kud" revision="lineage-18.1/kona" />
+  <project path="hardware/qcom-caf/thermal" name="platform/hardware/qcom/thermal" groups="caf,pdk-qcom,qcom" remote="caf" revision="refs/tags/LA.UM.9.16.r1-06200-MANNAR.0" />
   <remove-project name="android_hardware_qcom_sdm845_data_ipacfg-mgr" />
   <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="android_hardware_qcom_sdm845_data_ipacfg-mgr" groups="dot,generic_fs,vendor,qcom_sdm845" remote="dot" >
     <!-- use AOSP guard for now, matching LineageOS behavior -->
     <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
   </project>
+  <remove-project name="android_hardware_xiaomi" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" groups="kud" remote="kud" revision="android-11.0" />
 
   <project path="kernel/asus/sdm660" name="kernel_asus_sdm660-4.19" groups="asus-sdm660" clone-depth="1" remote="asus-sdm660" />
+  <remove-project name="kernel/configs" />
+  <project path="kernel/configs" name="kernel_configs" groups="kud,pdk,vts" remote="kud" revision="android-11.0" />
   <!-- <project path="kernel/xiaomi/sdm710" name="kernel_xiaomi_sdm710" groups="kud,xiaomi-sdm710" remote="kud" revision="android-11.0" /> -->
   <project path="kernel/xiaomi/sm8250" name="kernel_xiaomi_sm8250" groups="kud,xiaomi-kona" remote="kud" revision="lineage-18.1-temp" />
   <project path="kernel/xiaomi/sm8250/arch/arm64/boot/dts/vendor" name="KudProject/kernel_qcom_devicetree" groups="kud,xiaomi-kona" remote="private" revision="android11-qpr3-xiaomi-kona" />
@@ -78,6 +85,7 @@
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="kdrag0n/proton-clang" />
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" groups="lineage" clone-depth="1" remote="lineage" />
+  <project path="prebuilts/gas/linux-x86" name="prebuilts_gas_linux-x86" groups="kud,linux,pdk,x86" remote="kud" revision="main" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" />
   <remove-project name="android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
@@ -93,8 +101,12 @@
   <project path="vendor/asus" name="proprietary_vendor_asus" groups="asus-sdm660,kud" remote="kud" revision="dot11-4.19" />
   <remove-project name="android_vendor_codeaurora_telephony" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" groups="crdroid" remote="crdroid" />
-  <project path="vendor/extra" name="vendor_extra" groups="kud" remote="kud" revision="android-11.0" />
+  <project path="vendor/extra" name="vendor/extra.git" groups="kud" remote="kud-gitlab" revision="rvc-qpr3" />
+  <remove-project name="android_vendor_gms" />
+  <project path="vendor/gms" name="vendor/gms.git" groups="kud" remote="kud-gitlab" revision="dot11" />
   <project path="vendor/kud" name="KudProject/vendor_kud" groups="kud" remote="private" revision="eleven" />
+  <remove-project name="android_vendor_qcom_opensource_healthd-ext" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="platform/vendor/qcom-opensource/healthd-ext" groups="kud" remote="caf" revision="refs/tags/LA.UM.9.16.r1-03300-MANNAR.0" />
   <project path="vendor/qcom/sdclang-12.0" name="proprietary_vendor_qcom_sdclang" groups="aospa" clone-depth="1" remote="aospa-blobs" revision="ruby-12" />
   <project path="vendor/xiaomi" name="KudProject/proprietary_vendor_xiaomi" groups="kud,xiaomi-sdm710" remote="private" revision="dot11-grus" />
 </manifest>
