@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2022 DerpFest
+  ~ Copyright (C) 2022 KudProject Development
+  ~
+  ~ SPDX-License-Identifier: Apache-2.0
+ -->
+<manifest>
+  <!-- Remotes -->
+  <remote name="kud-github"
+          fetch="https://github.com/KudProject"
+          pushurl="ssh://git@github.com/KudProject" />
+
+  <remote name="kud-github-priv"
+          fetch="ssh://git@github.com/KudProject" />
+
+  <remote name="kud-gitlab"
+          fetch="https://gitlab.com/KudProject"
+          pushurl="ssh://git@gitlab.com/KudProject" />
+
+  <remote name="kud-gitlab-priv"
+          fetch="ssh://git@gitlab.com/KudProject" />
+
+  <!-- Vendor -->
+  <project path="vendor/gms_go" name="vendor/gms_go" clone-depth="1" remote="kud-gitlab-priv" revision="android-12.0" />
+  <project path="vendor/kud" name="vendor_kud" remote="kud-github-priv" revision="android-12.0" />
+</manifest>
