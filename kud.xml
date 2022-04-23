@@ -23,5 +23,8 @@
 
   <!-- Vendor -->
   <project path="vendor/gms_go" name="vendor/gms_go" clone-depth="1" remote="kud-gitlab-priv" revision="android-12.0" />
-  <project path="vendor/kud" name="vendor_kud" remote="kud-github-priv" revision="android-12.0" />
+  <project path="vendor/kud" name="vendor_kud" remote="kud-github-priv" revision="android-12.0">
+    <linkfile src="scripts/apex-replace_certs.bash" dest="apex-replace_certs.bash" />
+    <linkfile src="scripts/apex-reset_certs.bash" dest="apex-reset_certs.bash" />
+  </project>
 </manifest>
