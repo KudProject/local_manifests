@@ -22,6 +22,7 @@
           fetch="ssh://git@gitlab.com/KudProject" />
 
   <!-- Vendor -->
+  <project path="vendor/extra" name="vendor_extra" remote="kud-github" revision="android-12.0" />
   <project path="vendor/gms_go" name="vendor/gms_go" clone-depth="1" remote="kud-gitlab-priv" revision="android-12.0" />
   <project path="vendor/kud" name="vendor_kud" remote="kud-github-priv" revision="android-12.1">
     <linkfile src="scripts/apex/replace_certs.bash" dest="apex-replace_certs.bash" />
