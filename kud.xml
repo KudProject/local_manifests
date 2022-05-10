@@ -44,7 +44,7 @@
   <!-- Device -->
   <project path="device/xiaomi/alioth" name="device_xiaomi_alioth" remote="kud-github" revision="12.1-sw" />
   <project path="device/xiaomi/alioth-firmware" name="device_xiaomi_alioth-firmware" clone-depth="1" remote="hentai-gitlab" revision="b288a7f7884bfbeed5c444ae6fda38caff165756" />
-  <project path="device/xiaomi/alioth-kernel" name="device_xiaomi_alioth-kernel" clone-depth="1" remote="hentai-devices" revision="b5b7096047f3f05f730e34efeb421bbece762824" />
+  <project path="device/xiaomi/alioth-kernel" name="device_xiaomi_alioth-kernel" clone-depth="1" remote="hentai-devices" revision="d5c9cd82aef5e15fe0808c3ae27235ed62deecb6" />
 
   <!-- Vendor -->
   <project path="vendor/extra" name="vendor_extra" remote="kud-github" revision="android-12.0" />
@@ -54,5 +54,5 @@
     <linkfile src="scripts/apex/reset_certs.bash" dest="apex-reset_certs.bash" />
   </project>
   <project path="vendor/xiaomi/alioth" name="vendor_xiaomi_alioth" clone-depth="1" remote="snuggy-github" revision="7c034e76bc50f2027c754a7ed126ef1dd2f66624" />
-  <project path="vendor/xiaomi/alioth-vendor" name="vendor_xiaomi_alioth-vendor" clone-depth="1" remote="kud-gitlab" revision="b2164ae111aa8a93e8fb390ac9780da07c21eecb" />
+  <project path="vendor/xiaomi/alioth-vendor" name="vendor_xiaomi_alioth-vendor" clone-depth="1" remote="kud-gitlab" revision="9528df4879d17a12c82379dfe35b5c0d25d11c21" />
 </manifest>
