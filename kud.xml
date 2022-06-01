@@ -6,14 +6,14 @@
           pushurl="ssh://git@github.com/KudProject" />
 
   <!-- Bootable -->
-  <project path="bootable/recovery-twrp" name="bootable_recovery-twrp" remote="kud-github" revision="android-9.0" />
+  <!-- <project path="bootable/recovery-twrp" name="bootable_recovery-twrp" remote="kud-github" revision="android-9.0" /> -->
 
   <!-- Device -->
   <project path="device/huawei/scale" name="device_huawei_scale" remote="kud-github" revision="N" />
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" />
 
   <!-- External -->
-  <project path="external/busybox" name="LineageOS/android_external_busybox" />
+  <!-- <project path="external/busybox" name="LineageOS/android_external_busybox" /> -->
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" />
   <project path="external/stlport" name="LineageOS/android_external_stlport" />
 
