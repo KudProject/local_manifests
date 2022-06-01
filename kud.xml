@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="kud"
+  <remote name="kud-github"
           fetch="git://github.com/KudProject"
-          pushurl="ssh://git@github.com/KudProject"
-          review="https://review.lineageos.org" />
+          pushurl="ssh://git@github.com/KudProject" />
 
   <remote name="private"
           fetch="ssh://git@github.com" />
@@ -11,13 +10,13 @@
   <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" clone-depth="1" remote="aosp" revision="master" />
   <remove-project name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" groups="pdk,linux,arm" clone-depth="1" remote="kud-github" revision="master" />
 
-  <project path="bootable/recovery-twrp" name="bootable_recovery-twrp" remote="kud" revision="android-9.0" />
-  <project path="device/huawei/scale" name="device_huawei_scale" remote="kud" revision="N" />
+  <project path="bootable/recovery-twrp" name="bootable_recovery-twrp" remote="kud-github" revision="android-9.0" />
+  <project path="device/huawei/scale" name="device_huawei_scale" remote="kud-github" revision="N" />
   <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" />
-  <project path="device/samsung/exynos5410-common" name="device_samsung_exynos5410-common" remote="kud" revision="N" />
-  <project path="device/samsung/ja3gxx" name="device_samsung_ja3gxx" remote="kud" revision="N" />
+  <project path="device/samsung/exynos5410-common" name="device_samsung_exynos5410-common" remote="kud-github" revision="N" />
+  <project path="device/samsung/ja3gxx" name="device_samsung_ja3gxx" remote="kud-github" revision="N" />
   <project path="external/busybox" name="LineageOS/android_external_busybox" />
   <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" />
   <project path="external/stlport" name="LineageOS/android_external_stlport" />
@@ -26,11 +25,11 @@
   <project path="hardware/samsung_slsi-cm/exynos5" name="LineageOS/android_hardware_samsung_slsi-cm_exynos5" />
   <project path="hardware/samsung_slsi-cm/exynos5410" name="exynos5410/android_hardware_samsung_slsi-cm_exynos5410" />
   <project path="hardware/samsung_slsi-cm/openmax" name="LineageOS/android_hardware_samsung_slsi-cm_openmax" />
-  <!-- <project path="kernel/huawei/msm8916" name="KudProject/kernel_huawei_msm8916" remote="kud" /> -->
+  <!-- <project path="kernel/huawei/msm8916" name="kernel_huawei_msm8916" remote="kud-github" /> -->
   <project path="kernel/samsung/exynos5410" name="exynos5410/android_kernel_samsung_exynos5410" clone-depth="1" />
   <project path="packages/apps/SamsungServiceMode" name="LineageOS/android_packages_apps_SamsungServiceMode" />
   <project path="vendor/huawei" name="KudProject/proprietary_vendor_huawei" remote="private" />
-  <project path="vendor/kud" name="KudProject/vendor_kud" remote="private" revision="pie" />
+  <project path="vendor/kud-github" name="KudProject/vendor_kud-github" remote="private" revision="pie" />
   <project path="vendor/samsung" name="exynos5410/proprietary_vendor_samsung" clone-depth="1" />
 
 </manifest>
