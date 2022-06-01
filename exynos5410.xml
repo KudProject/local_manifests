@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="exynos5410"
+          fetch="https://github.com/exynos5410" />
+
+  <!-- Device -->
+  <project path="device/samsung/exynos5410-common" name="device_samsung_exynos5410-common" remote="kud-github" revision="N" />
+  <project path="device/samsung/ja3gchnduos" name="device_samsung_ja3gchnduos" remote="kud-github" revision="n" />
+  <project path="device/samsung/ja3gduosctc" name="device_samsung_ja3gduosctc" remote="kud-github" revision="n" />
+  <project path="device/samsung/ja3gxx" name="device_samsung_ja3gxx" remote="kud-github" revision="N" />
+  <!-- <project path="device/samsung/jaltelgt" name="android_device_samsung_jaltelgt" remote="exynos5410" /> -->
+  <!-- <project path="device/samsung/jalteskt" name="android_device_samsung_jalteskt" remote="exynos5410" /> -->
+
+  <!-- Hardware -->
+  <project path="hardware/samsung" name="android_hardware_samsung" />
+  <project path="hardware/samsung_slsi-cm/exynos" name="android_hardware_samsung_slsi-cm_exynos" />
+  <project path="hardware/samsung_slsi-cm/exynos5" name="android_hardware_samsung_slsi-cm_exynos5" />
+  <project path="hardware/samsung_slsi-cm/exynos5410" name="android_hardware_samsung_slsi-cm_exynos5410" remote="exynos5410" />
+  <project path="hardware/samsung_slsi-cm/openmax" name="android_hardware_samsung_slsi-cm_openmax" />
+
+  <!-- Kernel -->
+  <project path="kernel/samsung/exynos5410" name="android_kernel_samsung_exynos5410" remote="exynos5410" />
+
+  <!-- Packages -->
+  <project path="packages/apps/SamsungServiceMode" name="android_packages_apps_SamsungServiceMode" />
+
+  <!-- Vendor -->
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" clone-depth="1" remote="exynos5410" />
+</manifest>

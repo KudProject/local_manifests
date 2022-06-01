@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote name="kud-github"
+          fetch="https://github.com/KudProject"
+          pushurl="ssh://git@github.com/KudProject" />
+</manifest>
