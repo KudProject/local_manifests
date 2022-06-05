@@ -22,5 +22,5 @@
 
   <!-- Vendor -->
   <project path="vendor/huawei" name="KudProject/proprietary_vendor_huawei" clone-depth="1" remote="private" />
-  <project path="vendor/kud-github" name="KudProject/vendor_kud" clone-depth="1" remote="private" revision="eleven" />
+  <project path="vendor/kud" name="KudProject/vendor_kud" clone-depth="1" remote="private" revision="eleven" />
 </manifest>
