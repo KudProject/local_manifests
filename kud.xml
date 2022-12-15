@@ -21,7 +21,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="arm-linux-androideabi-4.9" clone-depth="1" remote="kud" revision="master" />
 
   <!-- Resources -->
-  <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" />
+  <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" revision="android-9.0-4.4" />
   <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" />
   <project path="external/magisk-prebuilt" name="TeamWin/external_magisk-prebuilt" remote="github" revision="android-9.0" />
   <project path="vendor/kud" name="KudProject/vendor_kud" remote="gh-private" revision="pie" />
