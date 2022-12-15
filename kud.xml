@@ -22,7 +22,6 @@
 
   <!-- Resources -->
   <project path="device/asus/X00T" name="device_asus_X00T-twrp" remote="kud" />
-  <project path="device/xiaomi/grus" name="device_xiaomi_grus-twrp" remote="kud" />
   <project path="device/xiaomi/mido" name="device_xiaomi_mido-twrp" remote="kud" />
   <project path="external/magisk-prebuilt" name="TeamWin/external_magisk-prebuilt" remote="github" revision="android-9.0" />
   <project path="vendor/kud" name="KudProject/vendor_kud" remote="gh-private" revision="pie" />
