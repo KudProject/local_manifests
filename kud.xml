@@ -3,7 +3,7 @@
 <manifest>
   <!-- Remotes -->
   <remote name="kud"
-          fetch="git://github.com/KudProject"
+          fetch="https://github.com/KudProject"
           pushurl="ssh://git@github.com/KudProject"
           revision="android-9.0" />
 
